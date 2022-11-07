@@ -1,4 +1,3 @@
-import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/services.dart';
@@ -14,12 +13,9 @@ import '../Classes/enums.dart';
 import '../Classes/AccountsClass.dart';
 import '../DataFiles/Budget related/constants.dart';
 import '../Data_Load_From_DB/AllTransectionDB/AllTransectionsFunctions.dart';
-import '../Data_Load_From_DB/AllTransectionDB/AllTransections_LocalDatabase.dart';
 import '../Data_Load_From_DB/notes.dart';
 import '../Shared_Preferences_DB/LoadingClass.dart';
-import 'package:intl/intl.dart';
 import 'package:share/share.dart';
-import '../Classes/All Contralling Dart Files/category_types.dart';
 
 
 void doNothing(BuildContext context) {}
@@ -109,11 +105,6 @@ class _TransectionsListState extends State<TransectionsList> {
               ),
             ],
             child: TransectionTiles(index,item)
-          // child: Container(
-          //   width: MediaQuery.of(context).size.width,
-          //   height: MediaQuery.of(context).size.height*0.16,
-          //   color: Colors.yellow,
-          // ),
         ),
         IsLast? Container(height: MediaQuery.of(context).size.height * 0.10,) : Container(height: MediaQuery.of(context).size.height * 0.0,),
       ],
@@ -128,7 +119,6 @@ class _TransectionsListState extends State<TransectionsList> {
 
     if(action==TransectionsSlidableActions.delete)
       {
-        // setState(() => AllTransectionsForTheTime.removeAt(item.ID));
         for(int i=0;i<AllTransectionsForTheTime.length;i++)
           {
             if(AllTransectionsForTheTime[i].ID==item.ID)
@@ -171,7 +161,6 @@ ${SelectedTraansectionsForTiles[index].IsRecurring? "Recurring transaction type"
     if(action==TransectionsSlidableActions.edit)
     {
       Categories Temperory = await UpdateIncomeExpenses(context, item ,true);
-      // Navigator.of(context).pushReplacementNamed("transections_page");
       SelectedTraansectionsForTiles[index]=Temperory;
       List <Note> SendIn= await UserSecureStorage.set_ToStringConverted_Lists([SelectedTraansectionsForTiles[index]]);
       AllTransections_updateNote(SendIn[0],tableAllTransections);
@@ -190,7 +179,6 @@ ${SelectedTraansectionsForTiles[index].IsRecurring? "Recurring transaction type"
     {
       SelectedTraansectionsForTiles[index].IsFavorite==false? SelectedTraansectionsForTiles[index].IsFavorite=true : SelectedTraansectionsForTiles[index].IsFavorite=false;
       setState(() {});
-      // Navigator.of(context).pushReplacementNamed("transections_page");
       List <Note> SendIn= await UserSecureStorage.set_ToStringConverted_Lists([SelectedTraansectionsForTiles[index]]);
       AllTransections_updateNote(SendIn[0],tableAllTransections);
     }
@@ -215,11 +203,7 @@ ${SelectedTraansectionsForTiles[index].IsRecurring? "Recurring transaction type"
     double TransectionAmounttemp; //
     bool IsRecurringtemp=IsRefurringFunction();
     String AccountDatatemp;
-    DateTime Datetemp = DateTime.now().subtract(Duration(days:DateInt =="Today"? 0:(DateInt =="Yesterday"? 1:(DateInt =="Two Days ago"? 2:3))));
-    // DateTime Datetemp = DateTime.now().subtract(Duration(days:DateInt =="Today"? 0:(DateInt =="Yesterday"? 1:(DateInt =="Two Days ago"? 2:(DateInt =="Three Days ago"? 3:(DateInt =="Four Days ago"? 4:(DateInt =="Five Days ago"? 5:(DateInt =="Six Days ago"? 6:(DateInt =="Seven Days ago"? 7:(DateInt =="Eight Days ago"? 8:(DateInt =="Nine Days ago"? 9:10)))))))))));
-    TimeOfDay Timetemp = TimeOfDay.now();
-
-// print('Click menu -> ${(int.parse(item.menuTitle))} ${(int.parse(item.menuTitle)).runtimeType}');
+   TimeOfDay Timetemp = TimeOfDay.now();
 
     Future submitdata() async{
       if (CategoryAmountInput == "" || dropdownValue == 'All Account')
@@ -245,7 +229,6 @@ ${SelectedTraansectionsForTiles[index].IsRecurring? "Recurring transaction type"
           IsRecurringtemp,
           AccountDatatemp,
           DateTime.now().subtract(Duration(days:DateInt =="Today"? 0:(DateInt =="Yesterday"? 1:(DateInt =="Two Days ago"? 2:3)))),
-          // Datetemp = DateTime.now().subtract(Duration(days:DateInt =="Today"? 0:(DateInt =="Yesterday"? 1:(DateInt =="Two Days ago"? 2:(DateInt =="Three Days ago"? 3:(DateInt =="Four Days ago"? 4:(DateInt =="Five Days ago"? 5:(DateInt =="Six Days ago"? 6:(DateInt =="Seven Days ago"? 7:(DateInt =="Eight Days ago"? 8:(DateInt =="Nine Days ago"? 9:10))))))))))),
           Timetemp,
           false,
           false,
@@ -278,7 +261,6 @@ ${SelectedTraansectionsForTiles[index].IsRecurring? "Recurring transaction type"
               children: [
                 SizedBox(width: 30,),
                 Flexible(
-                  // scrollDirection: Axis.horizontal,
                     child: Text("Editing ${OneCategory.CategoryType=="Incomes"? "Incomes":"Expenses"} transaction",style: TextStyle(fontSize: 20,),)
                 ),
               ],
@@ -385,13 +367,10 @@ ${SelectedTraansectionsForTiles[index].IsRecurring? "Recurring transaction type"
                         children: [
                           Container(
                             width: MediaQuery.of(context).size.width *0.04,
-                            // height: MediaQuery.of(context).size.height *0.03,
                             child: Image.asset("assets/IncomePagePics/all_accounts.png"),
                           ),
                           SizedBox(width: 10,),
                           Container(
-                            // width: MediaQuery.of(context).size.height *0.13,
-                            // height: MediaQuery.of(context).size.height *0.3,
                             child: Center(
                                 child: Text(Value_Selected)
                             ),
@@ -403,7 +382,6 @@ ${SelectedTraansectionsForTiles[index].IsRecurring? "Recurring transaction type"
                   borderRadius: BorderRadius.circular(30),
                   dropdownColor: Colors.white70,
                 ),
-                // SizedBox(width: MediaQuery.of(context).size.width *0.10,),
               ],
             ),
             SizedBox(height: MediaQuery.of(context).size.height*0.12,),
@@ -411,14 +389,12 @@ ${SelectedTraansectionsForTiles[index].IsRecurring? "Recurring transaction type"
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 ElevatedButton(
-                  // child: AddMoreCategoriesMenu(),
                   child: Container(
                       child: Text("Edit Transection")
                   ),
                   onPressed: (){
                     submitdata();
-                    // IsIncome? Navigator.of(context).pushReplacementNamed("incomes_page"):Navigator.of(context).pushReplacementNamed("expenses_page");
-                  },
+                    },
                   style: ElevatedButton.styleFrom(
                     elevation: 2,
                     primary: Colors.blue.shade500,
@@ -429,7 +405,6 @@ ${SelectedTraansectionsForTiles[index].IsRecurring? "Recurring transaction type"
                   ),
                 ),
                 ElevatedButton(
-                  // child: AddMoreCategoriesMenu(),
                   child: Text("Cancel"),
                   onPressed: (){
                     AddressofTheImagetemp="";
@@ -474,7 +449,6 @@ ${SelectedTraansectionsForTiles[index].IsRecurring? "Recurring transaction type"
             height: MediaQuery.of(context).size.height,
             width:MediaQuery.of(context).size.width,
             decoration: BoxDecoration(
-              // gradient: ColourList.GradientsForTransectionsBackground[0],
                 color: HexColor("#F7F7F7")
               // color: Colors.white,
             ),
@@ -492,21 +466,12 @@ ${SelectedTraansectionsForTiles[index].IsRecurring? "Recurring transaction type"
                   showTrackOnHover: true,
                   child: ListView.builder(
                     physics: BouncingScrollPhysics(),
-                    // physics: ClampingScrollPhysics(),
-                    // physics: FixedExtentScrollPhysics(),
-                    // physics: PageScrollPhysics(),
-                    // physics: RangeMaintainingScrollPhysics(),
-                    // physics: AlwaysScrollableScrollPhysics(),
-                    // physics: NeverScrollableScrollPhysics(),
-
                     itemCount: SelectedTraansectionsForTiles.length,
-                    // separatorBuilder: (context,index)=>SizedBox(height: 7,),
                     itemBuilder: (context,index){
 
                       final item = SelectedTraansectionsForTiles[index];
                       return index==0? ListViewReturn(index,item,true,false):(index==SelectedTraansectionsForTiles.length-1? ListViewReturn(index,item,false,true):ListViewReturn(index,item,false,false));
                     },
-                    // return Text();
                   ),
                 ),
 
@@ -533,7 +498,6 @@ ${SelectedTraansectionsForTiles[index].IsRecurring? "Recurring transaction type"
             padding: EdgeInsets.all(6),
             child:Column(
               children: [
-                // SizedBox(height:100),
                 SizedBox(height: MediaQuery.of(context).size.height * 0.04,),
 
                 Text(
@@ -547,17 +511,12 @@ ${SelectedTraansectionsForTiles[index].IsRecurring? "Recurring transaction type"
                 ),
 
                 SizedBox(height: MediaQuery.of(context).size.height * 0.01,),
-                // String dropdownValue = FiltersForTheApp.AccountType;
-                // String AccountValue = FiltersForTheApp.IncomeOrExpense;
-                // String FavoritesOrBadSets = FiltersForTheApp.ShowFavoritesOrBadSets;
 
                 DropdownButton<String>(
-                  // dropdownColor: Colors.white54.withOpacity(1.0),
                   value: dropdownValue,
                   onChanged: (String? newValue) {
                     FiltersForTheApp.AccountType = newValue!;
                     dropdownValue = FiltersForTheApp.AccountType;
-                    // print(FiltersForTheApp.AccountType);
                     Navigator.of(context).pushReplacementNamed("transections_page");
                   },
                   items: Accounts
@@ -575,7 +534,6 @@ ${SelectedTraansectionsForTiles[index].IsRecurring? "Recurring transaction type"
                             width: MediaQuery.of(context).size.width *0.70,
                             height: MediaQuery.of(context).size.width *0.09,
                             decoration: BoxDecoration(
-                              // color: Colors.white54.withOpacity(1.0),
                               borderRadius: BorderRadius.all(Radius.circular(4.0)),
                             ),
                           ),
@@ -587,14 +545,12 @@ ${SelectedTraansectionsForTiles[index].IsRecurring? "Recurring transaction type"
                                 height: MediaQuery.of(context).size.width *0.09,
                                 child: Container(
                                   child: Image.asset("assets/IncomePagePics/all_accounts.png"),
-                                  // color: Colors.black54.withOpacity(0.1),
 
                                 ),
                               ),
                               SizedBox(width: 10,),
                               Container(
                                 width: MediaQuery.of(context).size.height *0.13,
-                                // height: MediaQuery.of(context).size.height *0.3,
                                 child: Center(
                                     child: Text(Value_Selected,style: TextStyle(color: Colors.black),)
                                 ),
@@ -613,7 +569,6 @@ ${SelectedTraansectionsForTiles[index].IsRecurring? "Recurring transaction type"
 
 
                 DropdownButton<String>(
-                  // dropdownColor: Colors.white54.withOpacity(1.0),
                   value: AccountValue,
                   onChanged: (String? newValue) {
                     setState(() {
@@ -636,7 +591,6 @@ ${SelectedTraansectionsForTiles[index].IsRecurring? "Recurring transaction type"
                             width: MediaQuery.of(context).size.width *0.70,
                             height: MediaQuery.of(context).size.width *0.09,
                             decoration: BoxDecoration(
-                              // color: Colors.white54.withOpacity(1),
                               borderRadius: BorderRadius.all(Radius.circular(4.0)),
                             ),
                           ),
@@ -648,14 +602,12 @@ ${SelectedTraansectionsForTiles[index].IsRecurring? "Recurring transaction type"
                                 height: MediaQuery.of(context).size.width *0.09,
                                 child: Container(
                                   child: Image.asset("assets/IncomePagePics/all_accounts.png"),
-                                  // color: Colors.black54.withOpacity(0.1),
 
                                 ),
                               ),
                               SizedBox(width: 10,),
                               Container(
                                 width: MediaQuery.of(context).size.height *0.13,
-                                // height: MediaQuery.of(context).size.height *0.3,
                                 child: Center(
                                     child: Text(Value_Selected,style: TextStyle(color: Colors.black),)
                                 ),
@@ -673,7 +625,6 @@ ${SelectedTraansectionsForTiles[index].IsRecurring? "Recurring transaction type"
                 SizedBox(width: 20,),
 
                 DropdownButton<String>(
-                  // dropdownColor: Colors.white54.withOpacity(1.0),
                   value: FavoritesOrBadSets,
                   onChanged: (String? newValue) {
                     setState(() {
@@ -696,7 +647,6 @@ ${SelectedTraansectionsForTiles[index].IsRecurring? "Recurring transaction type"
                             width: MediaQuery.of(context).size.width *0.70,
                             height: MediaQuery.of(context).size.width *0.09,
                             decoration: BoxDecoration(
-                              // color: Colors.white54.withOpacity(1.0),
                               borderRadius: BorderRadius.all(Radius.circular(4.0)),
                             ),
                           ),
@@ -708,14 +658,12 @@ ${SelectedTraansectionsForTiles[index].IsRecurring? "Recurring transaction type"
                                 height: MediaQuery.of(context).size.width *0.09,
                                 child: Container(
                                   child: Image.asset("assets/IncomePagePics/all_accounts.png"),
-                                  // color: Colors.black54.withOpacity(0.1),
 
                                 ),
                               ),
                               SizedBox(width: 10,),
                               Container(
                                 width: MediaQuery.of(context).size.height *0.13,
-                                // height: MediaQuery.of(context).size.height *0.3,
                                 child: Center(
                                     child: Text(Value_Selected,style: TextStyle(color: Colors.black),)
                                 ),

@@ -1,6 +1,5 @@
 import '../DataFiles/Predictor Screen Data Files/FuturePredictorScreen/SettingsForFuturePrediction/models/tabIcon_data.dart';
 import 'package:flutter/material.dart';
-// import '../fitness_app/bottom_navigation_view/bottom_bar_view.dart';
 import '../DataFiles/Predictor Screen Data Files/FuturePredictorScreen/SettingsForFuturePrediction/fitness_app_theme.dart';
 import '../DataFiles/Predictor Screen Data Files/FuturePredictorScreen/WholePredictionBuild/PredictionScreen.dart';
 import '../../../Widgets/curved_bottom_navigation_bar.dart';
@@ -17,7 +16,6 @@ class _PredictorPageState extends State<PredictorPage>
   List<TabIconData> tabIconsList = TabIconData.tabIconsList;
 
   Widget tabBody = Container(
-    // color: FitnessAppTheme.background,
   );
 
   @override

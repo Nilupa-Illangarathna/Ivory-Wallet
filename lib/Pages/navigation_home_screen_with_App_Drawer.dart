@@ -3,7 +3,6 @@ import 'custom_drawer_for_main_Menu/drawer_user_controller.dart';
 import 'custom_drawer_for_main_Menu/home_drawer.dart';
 import '../DataFiles/MainMenuRelated(Drawer and other screens)/feedback_screen.dart';
 import '../DataFiles/MainMenuRelated(Drawer and other screens)/help_screen.dart';
-// import '../../MainMenuRelated(Drawer and other screens)/HomeScreen/home_screen.dart';
 import '../DataFiles/MainMenuRelated(Drawer and other screens)/invite_friend_screen.dart';
 import 'package:flutter/material.dart';
 import '../DataFiles/introduction_animation/introduction_animation_screen.dart';
@@ -40,11 +39,9 @@ class _NavigationHomeScreenState extends State<NavigationHomeScreen> {
             drawerWidth: MediaQuery.of(context).size.width * 0.75,
             onDrawerCall: (DrawerIndex drawerIndexdata) {
               changeIndex(drawerIndexdata);
-              //callback from drawer for replace screen as user need with passing DrawerIndex(Enum index)
             },
             screenView: screenView,
-            //we replace screen view as we need on navigate starting screens like MyHomePage, HelpScreen, FeedbackScreen, etc...
-          ),
+           ),
         ),
       ),
     );

@@ -1,19 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:ivorywalletsolution/Classes/All%20Contralling%20Dart%20Files/category_types.dart';
-import '../DataFiles/Budget related/constants.dart';
 import '../DataFiles/Budget related/shared.dart';
-import 'dart:math';
-import '../../Classes/All Contralling Dart Files/TransectionsClass.dart';
-import '../../Classes/All Contralling Dart Files/FiltersForAccounts.dart';
-import '../../Classes/All Contralling Dart Files/BudgetsList.dart';
-import '../../Widgets/curved_bottom_navigation_bar.dart';
 import '../../Classes/All Contralling Dart Files/FiltersForAccounts.dart';
 import '../../Shared_Preferences_DB/LoadingClass.dart';
-import '../../Data_Load_From_DB/BudgetsBD/BudgetsFunctions.dart';
-import '../../Data_Load_From_DB/notes.dart';
-import '../Widgets/curved_bottom_navigation_bar.dart';
-import '../Classes/AccountsClass.dart';
 import '../Classes/AccountsClass.dart';
 
 class SettingsPage extends StatefulWidget {
@@ -66,16 +55,6 @@ class _DetailState extends State<SettingsPage> {
         backgroundColor: Colors.transparent,
         brightness: Brightness.light,
         elevation: 0,
-        // leading: GestureDetector(
-        //   onTap: () {
-        //     Navigator.pop(context);
-        //   },
-        //   child: Icon(
-        //     Icons.arrow_back_ios,
-        //     color: Colors.black,
-        //     // size: MediaQuery.of(context).size.width*0.1,
-        //   ),
-        // ),
         actions: [
           Padding(
             padding: EdgeInsets.only(right: 16),
@@ -91,47 +70,21 @@ class _DetailState extends State<SettingsPage> {
 
       Stack(
         children: [
-          // Column(
-          //   children: [
-          //     SizedBox(height: MediaQuery.of(context).size.height*0.45,),
-          //     Flexible(
-          //       child: Container(
-          //         height: MediaQuery.of(context).size.height,
-          //         width: MediaQuery.of(context).size.width,
-          //         // padding: EdgeInsets.all(70),
-          //         decoration: BoxDecoration(
-          //           // color: Colors.green,
-          //           // shape: BoxShape.circle,
-          //           image: DecorationImage(
-          //             image: AssetImage("assets/SettingsPage/Settings.jpg"),///////////////////////
-          //             fit: BoxFit.fitWidth,
-          //             alignment: Alignment.bottomLeft,
-          //           ),
-          //         ),
-          //         // child: Image.asset("assets/SettingsPage/Settings.jpg",color: Colors.white.withOpacity(0.7),),
-          //       ),
-          //     ),
-          //   ],
-          // ),
 
 
-          // BottomNavBarV2(false),
           Container(
             child: SingleChildScrollView(
-              // physics: BouncingScrollPhysics(),
               child: Column(
                 children: [
                   SizedBox(height: 70,),
 
                   Container(
-                    // height: 310,
                     padding: EdgeInsets.only(left: 16),
                     child: SingleChildScrollView(
                       child: Stack(
                         children: [
 
                           Container(
-                            // height: 470,
                             color: Colors.transparent,
                             child: SingleChildScrollView(
                               physics: BouncingScrollPhysics(),
@@ -155,13 +108,11 @@ class _DetailState extends State<SettingsPage> {
                                           color: Color(0xFF4A6572),
                                         ),
                                       ),
-                                      // buildTextTitleVariation2("Set app settings", false),
 
                                       SizedBox(height: 6,),
 
                                       Row(
                                         children: [
-                                          // SizedBox(width: 5,),
                                           buildNutritions("Fingerprint on"),//////////////////////
                                         ],
                                       ),
@@ -180,7 +131,6 @@ class _DetailState extends State<SettingsPage> {
                                         ),
                                       ),
 
-                                      // buildTextTitleVariation2("App Decorations", false),
 
                                       buildElevation("Elevation"),//////////////////////
 
@@ -289,7 +239,6 @@ class _DetailState extends State<SettingsPage> {
             ),
           ),
           SingleChildScrollView(
-            // physics: BouncingScrollPhysics(),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
@@ -298,7 +247,6 @@ class _DetailState extends State<SettingsPage> {
                     color: Colors.white,
                     borderRadius: BorderRadius.only(bottomRight: Radius.circular(50),
                     ),
-                    // boxShadow: [kBoxShadow],
                   ),
                   child: Padding(
                     padding: EdgeInsets.only(right: 16,left: 16,bottom: 16),
@@ -342,7 +290,6 @@ class _DetailState extends State<SettingsPage> {
 
   Widget Cash_Or_Card_Function(){
     return Container(
-      // height: MediaQuery.of(context).size.height*0.09,
       width: MediaQuery.of(context).size.width*0.9,
       padding: EdgeInsets.all(8),
       decoration: BoxDecoration(
@@ -350,7 +297,6 @@ class _DetailState extends State<SettingsPage> {
         borderRadius: BorderRadius.all(
           Radius.circular(50),
         ),
-        // boxShadow: [kBoxShadow],
       ),
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.center,
@@ -369,11 +315,9 @@ class _DetailState extends State<SettingsPage> {
               ),
             ),
           ),
-          // FiltersForTheApp.Is_Cash
           Row(
             children: [
               Container(
-                // height: MediaQuery.of(context).size.height * 0.43,
                 width: MediaQuery.of(context).size.width*0.2,
 
                 decoration: BoxDecoration(
@@ -388,7 +332,6 @@ class _DetailState extends State<SettingsPage> {
                     });
                   },
                   style: ElevatedButton.styleFrom(
-                    // elevation: 15,
                     primary: FrequntPaymentMethod==AccountsToShow[0] ? Colors.blue : Colors.white,
                     shadowColor: FrequntPaymentMethod==AccountsToShow[0] ? Colors.blue : Colors.white,
                     shape: RoundedRectangleBorder(borderRadius: BorderRadius.only(bottomLeft: Radius.circular(MediaQuery.of(context).size.width*0.03),topLeft: Radius.circular(MediaQuery.of(context).size.width*0.03)),
@@ -402,7 +345,6 @@ class _DetailState extends State<SettingsPage> {
               ),
 
               Container(
-                // height: MediaQuery.of(context).size.height * 0.43,
                 width: MediaQuery.of(context).size.width*0.2,
 
                 decoration: BoxDecoration(
@@ -417,7 +359,6 @@ class _DetailState extends State<SettingsPage> {
                     });
                   },
                   style: ElevatedButton.styleFrom(
-                    // elevation: 15,
                     primary: FrequntPaymentMethod==AccountsToShow[1] ? Colors.blue : Colors.white,
                     shadowColor: FrequntPaymentMethod==AccountsToShow[1] ? Colors.blue : Colors.white,
                     shape: RoundedRectangleBorder(borderRadius: BorderRadius.only(bottomRight: Radius.circular(MediaQuery.of(context).size.width*0.03),topRight: Radius.circular(MediaQuery.of(context).size.width*0.03)),
@@ -433,11 +374,6 @@ class _DetailState extends State<SettingsPage> {
             ],
           ),
 
-
-          // SizedBox(
-          //   width: 20,
-          // ),
-
         ],
       ),
     );
@@ -448,7 +384,6 @@ class _DetailState extends State<SettingsPage> {
 
   Widget VoiceRecognitionFunc(){
     return Container(
-      // height: MediaQuery.of(context).size.height*0.09,
       width: MediaQuery.of(context).size.width*0.9,
       padding: EdgeInsets.all(8),
       decoration: BoxDecoration(
@@ -456,7 +391,6 @@ class _DetailState extends State<SettingsPage> {
         borderRadius: BorderRadius.all(
           Radius.circular(50),
         ),
-        // boxShadow: [kBoxShadow],
       ),
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.center,
@@ -482,7 +416,6 @@ class _DetailState extends State<SettingsPage> {
           Row(
             children: [
               Container(
-                // height: MediaQuery.of(context).size.height * 0.43,
                 width: MediaQuery.of(context).size.width*0.3,
 
                 decoration: BoxDecoration(
@@ -497,7 +430,6 @@ class _DetailState extends State<SettingsPage> {
                     });
                   },
                   style: ElevatedButton.styleFrom(
-                    // elevation: 15,
                     primary: VoiceRecognition? Colors.blue : Colors.white,
                     shadowColor: VoiceRecognition? Colors.blue : Colors.white,
                     shape: RoundedRectangleBorder(borderRadius: BorderRadius.only(
@@ -520,10 +452,6 @@ class _DetailState extends State<SettingsPage> {
           ),
 
 
-          // SizedBox(
-          //   width: 20,
-          // ),
-
         ],
       ),
     );
@@ -532,7 +460,6 @@ class _DetailState extends State<SettingsPage> {
 
   Widget PastDaysToConsiderFunction( String title){
     return Container(
-      // height: MediaQuery.of(context).size.height*0.09,
       width: MediaQuery.of(context).size.width*0.9,
       padding: EdgeInsets.all(8),
       decoration: BoxDecoration(
@@ -540,7 +467,6 @@ class _DetailState extends State<SettingsPage> {
         borderRadius: BorderRadius.all(
           Radius.circular(50),
         ),
-        // boxShadow: [kBoxShadow],
       ),
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.center,
@@ -563,7 +489,6 @@ class _DetailState extends State<SettingsPage> {
           Row(
             children: [
               Container(
-                // height: MediaQuery.of(context).size.height * 0.43,
                 width: MediaQuery.of(context).size.width*0.1,
 
                 decoration: BoxDecoration(
@@ -578,7 +503,6 @@ class _DetailState extends State<SettingsPage> {
                     });
                   },
                   style: ElevatedButton.styleFrom(
-                    // elevation: 15,
                     primary: PredictionPastDaysToConsider.toString()==PredictionDaysToBeConsidered[0] ? Colors.blue : Colors.white,
                     shadowColor: PredictionPastDaysToConsider.toString()==PredictionDaysToBeConsidered[0] ? Colors.blue : Colors.white,
                     shape: RoundedRectangleBorder(borderRadius: BorderRadius.only(bottomLeft: Radius.circular(MediaQuery.of(context).size.width*0.03),topLeft: Radius.circular(MediaQuery.of(context).size.width*0.03)),
@@ -593,12 +517,9 @@ class _DetailState extends State<SettingsPage> {
 
 
               Container(
-                // height: MediaQuery.of(context).size.height * 0.43,
                 width: MediaQuery.of(context).size.width*0.14,
 
-                decoration: BoxDecoration(
-                  // borderRadius: BorderRadius.only(bottomLeft: Radius.circular(MediaQuery.of(context).size.width*0.03),topLeft: Radius.circular(MediaQuery.of(context).size.width*0.03)),
-                ),
+                decoration: BoxDecoration(),
                 child: ElevatedButton(
                   onPressed: (){
                     PredictionPastDaysToConsider=PredictionDaysToBeConsidered[1];
@@ -608,7 +529,6 @@ class _DetailState extends State<SettingsPage> {
                     });
                   },
                   style: ElevatedButton.styleFrom(
-                    // elevation: 15,
                     primary: PredictionPastDaysToConsider.toString()==PredictionDaysToBeConsidered[1] ? Colors.blue : Colors.white,
                     shadowColor: PredictionPastDaysToConsider.toString()==PredictionDaysToBeConsidered[1] ? Colors.blue : Colors.white,
                     shape: RoundedRectangleBorder(borderRadius: BorderRadius.only(bottomLeft: Radius.circular(MediaQuery.of(context).size.width*0.0),topLeft: Radius.circular(MediaQuery.of(context).size.width*0.0)),
@@ -623,12 +543,9 @@ class _DetailState extends State<SettingsPage> {
 
 
               Container(
-                // height: MediaQuery.of(context).size.height * 0.43,
                 width: MediaQuery.of(context).size.width*0.14,
 
-                decoration: BoxDecoration(
-                  // borderRadius: BorderRadius.only(bottomLeft: Radius.circular(MediaQuery.of(context).size.width*0.03),topLeft: Radius.circular(MediaQuery.of(context).size.width*0.03)),
-                ),
+                decoration: BoxDecoration(),
                 child: ElevatedButton(
                   onPressed: (){
                     PredictionPastDaysToConsider=PredictionDaysToBeConsidered[2];
@@ -638,7 +555,6 @@ class _DetailState extends State<SettingsPage> {
                     });
                   },
                   style: ElevatedButton.styleFrom(
-                    // elevation: 15,
                     primary: PredictionPastDaysToConsider.toString()==PredictionDaysToBeConsidered[2] ? Colors.blue : Colors.white,
                     shadowColor: PredictionPastDaysToConsider.toString()==PredictionDaysToBeConsidered[2] ? Colors.blue : Colors.white,
                     shape: RoundedRectangleBorder(borderRadius: BorderRadius.only(bottomLeft: Radius.circular(MediaQuery.of(context).size.width*0.0),topLeft: Radius.circular(MediaQuery.of(context).size.width*0.0)),
@@ -652,7 +568,6 @@ class _DetailState extends State<SettingsPage> {
               ),
 
               Container(
-                // height: MediaQuery.of(context).size.height * 0.43,
                 width: MediaQuery.of(context).size.width*0.2,
 
                 decoration: BoxDecoration(
@@ -683,11 +598,6 @@ class _DetailState extends State<SettingsPage> {
             ],
           ),
 
-
-          // SizedBox(
-          //   width: 20,
-          // ),
-
         ],
       ),
     );
@@ -696,7 +606,6 @@ class _DetailState extends State<SettingsPage> {
 
   Widget OverviewStackedBarChartDaysToConsiderFunction(){
     return Container(
-      // height: MediaQuery.of(context).size.height*0.09,
       width: MediaQuery.of(context).size.width*0.9,
       padding: EdgeInsets.all(8),
       decoration: BoxDecoration(
@@ -704,7 +613,6 @@ class _DetailState extends State<SettingsPage> {
         borderRadius: BorderRadius.all(
           Radius.circular(50),
         ),
-        // boxShadow: [kBoxShadow],
       ),
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.center,
@@ -727,7 +635,6 @@ class _DetailState extends State<SettingsPage> {
           Row(
             children: [
               Container(
-                // height: MediaQuery.of(context).size.height * 0.43,
                 width: MediaQuery.of(context).size.width*0.1,
 
                 decoration: BoxDecoration(
@@ -742,7 +649,6 @@ class _DetailState extends State<SettingsPage> {
                     });
                   },
                   style: ElevatedButton.styleFrom(
-                    // elevation: 15,
                     primary: OverviwPastDaysToConsider.toString()==OverviewDaysToBeConsideredList[0] ? Colors.blue : Colors.white,
                     shadowColor: OverviwPastDaysToConsider.toString()==OverviewDaysToBeConsideredList[0] ? Colors.blue : Colors.white,
                     shape: RoundedRectangleBorder(borderRadius: BorderRadius.only(bottomLeft: Radius.circular(MediaQuery.of(context).size.width*0.03),topLeft: Radius.circular(MediaQuery.of(context).size.width*0.03)),
@@ -757,7 +663,6 @@ class _DetailState extends State<SettingsPage> {
 
 
               Container(
-                // height: MediaQuery.of(context).size.height * 0.43,
                 width: MediaQuery.of(context).size.width*0.14,
 
                 decoration: BoxDecoration(
@@ -787,12 +692,9 @@ class _DetailState extends State<SettingsPage> {
 
 
               Container(
-                // height: MediaQuery.of(context).size.height * 0.43,
                 width: MediaQuery.of(context).size.width*0.14,
 
-                decoration: BoxDecoration(
-                  // borderRadius: BorderRadius.only(bottomLeft: Radius.circular(MediaQuery.of(context).size.width*0.03),topLeft: Radius.circular(MediaQuery.of(context).size.width*0.03)),
-                ),
+                decoration: BoxDecoration(),
                 child: ElevatedButton(
                   onPressed: (){
                     OverviwPastDaysToConsider=OverviewDaysToBeConsideredList[2];
@@ -816,7 +718,6 @@ class _DetailState extends State<SettingsPage> {
               ),
 
               Container(
-                // height: MediaQuery.of(context).size.height * 0.43,
                 width: MediaQuery.of(context).size.width*0.2,
 
                 decoration: BoxDecoration(
@@ -831,7 +732,6 @@ class _DetailState extends State<SettingsPage> {
                     });
                   },
                   style: ElevatedButton.styleFrom(
-                    // elevation: 15,
                     primary: OverviwPastDaysToConsider.toString()==OverviewDaysToBeConsideredList[3] ? Colors.blue : Colors.white,
                     shadowColor: OverviwPastDaysToConsider.toString()==OverviewDaysToBeConsideredList[3] ? Colors.blue : Colors.white,
                     shape: RoundedRectangleBorder(borderRadius: BorderRadius.only(bottomRight: Radius.circular(MediaQuery.of(context).size.width*0.03),topRight: Radius.circular(MediaQuery.of(context).size.width*0.03)),
@@ -848,10 +748,6 @@ class _DetailState extends State<SettingsPage> {
           ),
 
 
-          // SizedBox(
-          //   width: 20,
-          // ),
-
         ],
       ),
     );
@@ -860,7 +756,6 @@ class _DetailState extends State<SettingsPage> {
 
   Widget buildCurrency( String title){
     return Container(
-      // height: MediaQuery.of(context).size.height*0.09,
       width: MediaQuery.of(context).size.width*0.9,
       padding: EdgeInsets.all(8),
       decoration: BoxDecoration(
@@ -868,7 +763,6 @@ class _DetailState extends State<SettingsPage> {
         borderRadius: BorderRadius.all(
           Radius.circular(50),
         ),
-        // boxShadow: [kBoxShadow],
       ),
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.center,
@@ -891,8 +785,6 @@ class _DetailState extends State<SettingsPage> {
             width: MediaQuery.of(context).size.width*0.3,
             height: MediaQuery.of(context).size.width*0.1,
             child: TextField(
-              // autocorrect: true,
-              // autofocus: true,
               onChanged: (val){
                 CurrencyType=val;
               },
@@ -905,9 +797,6 @@ class _DetailState extends State<SettingsPage> {
             ),
           ),
 
-          // SizedBox(
-          //   width: 20,
-          // ),
 
         ],
       ),
@@ -919,15 +808,12 @@ class _DetailState extends State<SettingsPage> {
 
   Widget buildElevation(String title){
     return Container(
-      // height: MediaQuery.of(context).size.height*0.09,
       width: MediaQuery.of(context).size.width*0.9,
-      // padding: EdgeInsets.all(8),
       decoration: BoxDecoration(
         color: Colors.transparent,
         borderRadius: BorderRadius.all(
           Radius.circular(50),
         ),
-        // boxShadow: [kBoxShadow],
       ),
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.center,
@@ -979,12 +865,9 @@ class _DetailState extends State<SettingsPage> {
 
 
               Container(
-                // height: MediaQuery.of(context).size.height * 0.43,
                 width: MediaQuery.of(context).size.width*0.1,
 
-                decoration: BoxDecoration(
-                  // borderRadius: BorderRadius.only(bottomLeft: Radius.circular(MediaQuery.of(context).size.width*0.03),topLeft: Radius.circular(MediaQuery.of(context).size.width*0.03)),
-                ),
+                decoration: BoxDecoration(),
                 child: ElevatedButton(
                   onPressed: (){
                     dropdownValue=2;
@@ -994,7 +877,6 @@ class _DetailState extends State<SettingsPage> {
                     });
                   },
                   style: ElevatedButton.styleFrom(
-                    // elevation: 15,
                     primary: dropdownValue.toString()=="2.0" ? Colors.blue : Colors.white,
                     shadowColor: dropdownValue.toString()=="2.0" ? Colors.blue : Colors.white,
                     shape: RoundedRectangleBorder(borderRadius: BorderRadius.only(bottomLeft: Radius.circular(MediaQuery.of(context).size.width*0.0),topLeft: Radius.circular(MediaQuery.of(context).size.width*0.0)),
@@ -1009,12 +891,9 @@ class _DetailState extends State<SettingsPage> {
 
 
               Container(
-                // height: MediaQuery.of(context).size.height * 0.43,
                 width: MediaQuery.of(context).size.width*0.1,
 
-                decoration: BoxDecoration(
-                  // borderRadius: BorderRadius.only(bottomLeft: Radius.circular(MediaQuery.of(context).size.width*0.03),topLeft: Radius.circular(MediaQuery.of(context).size.width*0.03)),
-                ),
+                decoration: BoxDecoration(),
                 child: ElevatedButton(
                   onPressed: (){
                     dropdownValue=3;
@@ -1024,7 +903,6 @@ class _DetailState extends State<SettingsPage> {
                     });
                   },
                   style: ElevatedButton.styleFrom(
-                    // elevation: 15,
                     primary: dropdownValue.toString()=="3.0" ? Colors.blue : Colors.white,
                     shadowColor: dropdownValue.toString()=="3.0" ? Colors.blue : Colors.white,
                     shape: RoundedRectangleBorder(borderRadius: BorderRadius.only(bottomLeft: Radius.circular(MediaQuery.of(context).size.width*0.0),topLeft: Radius.circular(MediaQuery.of(context).size.width*0.0)),
@@ -1038,7 +916,6 @@ class _DetailState extends State<SettingsPage> {
               ),
 
               Container(
-                // height: MediaQuery.of(context).size.height * 0.43,
                 width: MediaQuery.of(context).size.width*0.1,
 
                 decoration: BoxDecoration(
@@ -1053,7 +930,6 @@ class _DetailState extends State<SettingsPage> {
                     });
                   },
                   style: ElevatedButton.styleFrom(
-                    // elevation: 15,
                     primary: dropdownValue.toString()=="4.0" ? Colors.blue : Colors.white,
                     shadowColor: dropdownValue.toString()=="4.0" ? Colors.blue : Colors.white,
                     shape: RoundedRectangleBorder(borderRadius: BorderRadius.only(bottomRight: Radius.circular(MediaQuery.of(context).size.width*0.03),topRight: Radius.circular(MediaQuery.of(context).size.width*0.03)),
@@ -1077,15 +953,12 @@ class _DetailState extends State<SettingsPage> {
 
   Widget buildNutritions( String title){
     return Container(
-      // height: MediaQuery.of(context).size.height*0.09,
       width: MediaQuery.of(context).size.width*0.9,
-      // padding: EdgeInsets.all(8),
       decoration: BoxDecoration(
         color: Colors.transparent,
         borderRadius: BorderRadius.all(
           Radius.circular(50),
         ),
-        // boxShadow: [kBoxShadow],
       ),
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.center,
@@ -1108,7 +981,6 @@ class _DetailState extends State<SettingsPage> {
             Row(
               children: [
                 Container(
-                  // height: MediaQuery.of(context).size.height * 0.43,
                   width: MediaQuery.of(context).size.width*0.3,
 
                   decoration: BoxDecoration(
@@ -1123,7 +995,6 @@ class _DetailState extends State<SettingsPage> {
                       });
                     },
                     style: ElevatedButton.styleFrom(
-                      // elevation: 15,
                       primary: FingerPrintOn? Colors.blue : Colors.white,
                       shadowColor: FingerPrintOn? Colors.blue : Colors.white,
                       shape: RoundedRectangleBorder(borderRadius: BorderRadius.only(
@@ -1145,48 +1016,12 @@ class _DetailState extends State<SettingsPage> {
               ],
             ),
 
-
-            // Switch(
-            //
-            //   value: FingerPrintOn,
-            //   onChanged: (value) {
-            //     setState(() {
-            //       FingerPrintOn = value;
-            //       // print(FingerPrintOn);
-            //     });
-            //   },
-            //   activeTrackColor: Colors.lightBlue,
-            //   activeColor: Colors.blue,
-            // ),
           ),
 
-          // SizedBox(
-          //   width: 20,
-          // ),
 
         ],
       ),
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
