@@ -5,27 +5,21 @@ import '../Classes/All Contralling Dart Files/category_types.dart';
 import '../Widgets/PopUpMenu/popup_menu.dart';
 import '../Widgets/PopUpMenu/menu_config.dart';
 import '../Widgets/PopUpMenu/menu_item.dart';
-import '../Classes/colors.dart';
-import '../Classes/All Contralling Dart Files/category_types.dart';
 import '../Classes/AccountsClass.dart';
 import '../Classes/All Contralling Dart Files/TransectionsClass.dart';
 import '../Classes/All Contralling Dart Files/FiltersForAccounts.dart';
 import '../Classes/All Contralling Dart Files/BudgetsList.dart';
 import '../Data_Load_From_DB/notes.dart';
 import '../Data_Load_From_DB/AllTransectionDB/AllTransectionsFunctions.dart';
-import '../Data_Load_From_DB/AllTransectionDB/AllTransections_LocalDatabase.dart';
 import '../Shared_Preferences_DB/LoadingClass.dart';
-import '../Data_Load_From_DB/AllTransectionDB/AllTransectionsFunctions.dart';
 import '../Data_Load_From_DB/IncomeCategoryDB/IncomeCategoryFunctions.dart';
 import '../Data_Load_From_DB/ExpenseCategoryDB/ExpenseCategoryFunctions.dart';
 import '../Data_Load_From_DB/BudgetsBD/BudgetsFunctions.dart';
 import 'package:speech_to_text/speech_to_text.dart' as stt;
 
-//148  175    392   423   451
 
 
 class CategoryButton extends StatefulWidget {
-  // const CategoryButton({Key? key}) : super(key: key);
 
   bool IsIncome;
   Categories OneCategory;
@@ -135,7 +129,6 @@ class _ButtonOnlyState extends State<ButtonOnly> with SingleTickerProviderStateM
   GlobalKey btnKey3 = GlobalKey();
 
   void onClickMenu(MenuItemProvider item) {
-    // print('Click menu -> ${(int.parse(item.menuTitle))} ${(int.parse(item.menuTitle)).runtimeType}');
     AddressofTheImagetemp=IconSelectionMenu[int.parse(item.menuTitle)-1].Address;
   }
 
@@ -160,15 +153,9 @@ class _ButtonOnlyState extends State<ButtonOnly> with SingleTickerProviderStateM
     double TransectionAmounttemp; //
     bool IsRecurringtemp=IsRefurringFunction();
     String AccountDatatemp;
-    DateTime Datetemp = DateTime.now().subtract(Duration(days:DateInt =="Today"? 0:(DateInt =="Yesterday"? 1:(DateInt =="Two Days ago"? 2:3))));
-    // DateTime Datetemp = DateTime.now().subtract(Duration(days:DateInt =="Today"? 0:(DateInt =="Yesterday"? 1:(DateInt =="Two Days ago"? 2:(DateInt =="Three Days ago"? 3:(DateInt =="Four Days ago"? 4:(DateInt =="Five Days ago"? 5:(DateInt =="Six Days ago"? 6:(DateInt =="Seven Days ago"? 7:(DateInt =="Eight Days ago"? 8:(DateInt =="Nine Days ago"? 9:10)))))))))));
     TimeOfDay Timetemp = TimeOfDay.now();
 
 
-//148  175    392   423   451
-
-
-// print('Click menu -> ${(int.parse(item.menuTitle))} ${(int.parse(item.menuTitle)).runtimeType}');
 
     Future submitdata() async{
       if ((CategoryAmountInput == ""  ||double.parse(CategoryAmountInput) <0) && _text == '')
@@ -193,7 +180,6 @@ class _ButtonOnlyState extends State<ButtonOnly> with SingleTickerProviderStateM
           IsRecurringtemp,
           AccountDatatemp,
           DateTime.now().subtract(Duration(days:DateInt =="Today"? 0:(DateInt =="Yesterday"? 1:(DateInt =="Two Days ago"? 2:3)))),
-          // Datetemp = DateTime.now().subtract(Duration(days:DateInt =="Today"? 0:(DateInt =="Yesterday"? 1:(DateInt =="Two Days ago"? 2:(DateInt =="Three Days ago"? 3:(DateInt =="Four Days ago"? 4:(DateInt =="Five Days ago"? 5:(DateInt =="Six Days ago"? 6:(DateInt =="Seven Days ago"? 7:(DateInt =="Eight Days ago"? 8:(DateInt =="Nine Days ago"? 9:10))))))))))),
           Timetemp,
           false,
           false,
@@ -203,7 +189,6 @@ class _ButtonOnlyState extends State<ButtonOnly> with SingleTickerProviderStateM
         List <Note> StringBasedList=await UserSecureStorage.set_ToStringConverted_Lists([Temp]);
         AllTransections_addNote(StringBasedList[0],tableAllTransections);
 
-//148  175    392   423   451
 
         dropdownValue = FiltersForTheApp.Is_Cash;;
         AddressofTheImagetemp="";
@@ -220,9 +205,7 @@ class _ButtonOnlyState extends State<ButtonOnly> with SingleTickerProviderStateM
 
     showModalBottomSheet(isScrollControlled: true,isDismissible: false, enableDrag: false, context: ctx, builder: (_){
 
-      onClosing: () {
-        print('on closing');
-      };
+
 
       void VoidFunc(){
 
@@ -262,7 +245,6 @@ class _ButtonOnlyState extends State<ButtonOnly> with SingleTickerProviderStateM
           });
         }
       }
-      // DescriptionContraller
       void _listenTransectionsDescription() async {
         if (!_isListening) {
           setState(() {
@@ -296,7 +278,6 @@ class _ButtonOnlyState extends State<ButtonOnly> with SingleTickerProviderStateM
           });
         }
       }
-      // _textDescription
       return
         Stack(
           children: [
@@ -311,7 +292,6 @@ class _ButtonOnlyState extends State<ButtonOnly> with SingleTickerProviderStateM
                     children: [
                       SizedBox(width: 30,),
                       Flexible(
-                        // scrollDirection: Axis.horizontal,
                           child: Text("Adding ${OneCategory.CategoryName} transaction amount",style: TextStyle(fontSize: 20,),)
                       ),
                     ],
@@ -333,7 +313,6 @@ class _ButtonOnlyState extends State<ButtonOnly> with SingleTickerProviderStateM
                           Row(
                             children: [
                               ElevatedButton(
-                                // child: AddMoreCategoriesMenu(),
                                 child: Container(
                                     child: Text("Clear")
                                 ),
@@ -533,7 +512,6 @@ class _ButtonOnlyState extends State<ButtonOnly> with SingleTickerProviderStateM
                                 SizedBox(width: 10,),
                                 Container(
                                   width: MediaQuery.of(context).size.height *0.13,
-                                  // height: MediaQuery.of(context).size.height *0.3,
                                   child: Center(
                                       child: Text(Value_Selected)
                                   ),
@@ -565,13 +543,10 @@ class _ButtonOnlyState extends State<ButtonOnly> with SingleTickerProviderStateM
                               children: [
                                 Container(
                                   width: MediaQuery.of(context).size.width *0.04,
-                                  // height: MediaQuery.of(context).size.height *0.03,
                                   child: Image.asset("assets/IncomePagePics/all_accounts.png"),
                                 ),
                                 SizedBox(width: 10,),
                                 Container(
-                                  // width: MediaQuery.of(context).size.height *0.13,
-                                  // height: MediaQuery.of(context).size.height *0.3,
                                   child: Center(
                                       child: Text(Value_Selected)
                                   ),
@@ -583,15 +558,12 @@ class _ButtonOnlyState extends State<ButtonOnly> with SingleTickerProviderStateM
                         borderRadius: BorderRadius.circular(30),
                         dropdownColor: Colors.white70,
                       ),
-                      // SizedBox(width: MediaQuery.of(context).size.width *0.10,),
                     ],
                   ),
-                  // SizedBox(height: MediaQuery.of(context).size.height*0.12,),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
                       ElevatedButton(
-                        // child: AddMoreCategoriesMenu(),
                         child: Container(
                             child: Text("Add amount")
                         ),
@@ -600,10 +572,7 @@ class _ButtonOnlyState extends State<ButtonOnly> with SingleTickerProviderStateM
                           print(CategoryDescriptionInput);
                           submitdata();
                           _text = '';
-                          _textDescription = '';
-                          // NumberContraller='' as TextEditingController;
-                          // IsIncome? Navigator.of(context).pushReplacementNamed("incomes_page"):Navigator.of(context).pushReplacementNamed("expenses_page");
-                        },
+                          _textDescription = '';},
                         style: ElevatedButton.styleFrom(
                           elevation: 2,
                           primary: Colors.blue.shade500,
@@ -614,7 +583,6 @@ class _ButtonOnlyState extends State<ButtonOnly> with SingleTickerProviderStateM
                         ),
                       ),
                       ElevatedButton(
-                        // child: AddMoreCategoriesMenu(),
                         child: Text("Cancel"),
                         onPressed: (){
                           AddressofTheImagetemp="";
@@ -624,7 +592,6 @@ class _ButtonOnlyState extends State<ButtonOnly> with SingleTickerProviderStateM
                           DateInt="Today";
                           _text = '';
                           _textDescription = '';
-                          // NumberContraller='' as TextEditingController;
                           Navigator.of(context).pop();
                         },
                         style: ElevatedButton.styleFrom(
@@ -660,7 +627,6 @@ class _ButtonOnlyState extends State<ButtonOnly> with SingleTickerProviderStateM
     double TransectionAmounttemp; //
     bool IsRecurringtemp;
     DateTime Date=DateTime.now().subtract(Duration(days:DateInt =="Today"? 0:(DateInt =="Yesterday"? 1:(DateInt =="Two Days ago"? 2:3))));
-    // DateTime Date = DateTime.now().subtract(Duration(days:DateInt =="Today"? 0:(DateInt =="Yesterday"? 1:(DateInt =="Two Days ago"? 2:(DateInt =="Three Days ago"? 3:(DateInt =="Four Days ago"? 4:(DateInt =="Five Days ago"? 5:(DateInt =="Six Days ago"? 6:(DateInt =="Seven Days ago"? 7:(DateInt =="Eight Days ago"? 8:(DateInt =="Nine Days ago"? 9:10)))))))))));
     TimeOfDay Time = TimeOfDay.now();
 
 //148  175    392   423   451
@@ -671,7 +637,6 @@ class _ButtonOnlyState extends State<ButtonOnly> with SingleTickerProviderStateM
     IsIncome? EndButtonColortemp = EndColourListForIncomeCategories[IDtemp-1] : EndButtonColortemp = EndColourListForExpenseCategories[IDtemp-1];
     TransectionAmounttemp =0;
     IsRecurringtemp = IsRefurringFunction();
-// print('Click menu -> ${(int.parse(item.menuTitle))} ${(int.parse(item.menuTitle)).runtimeType}');
     Future submitdata()async{
       if (CategoryNameInput == "" || CategoryAmountInput == "" ||  AddressofTheImagetemp== "")
       {
@@ -694,13 +659,11 @@ class _ButtonOnlyState extends State<ButtonOnly> with SingleTickerProviderStateM
           IsRecurringtemp,
           "Null",
           DateTime.now().subtract(Duration(days:DateInt =="Today"? 0:(DateInt =="Yesterday"? 1:(DateInt =="Two Days ago"? 2:3)))),
-          // DateTime.now().subtract(Duration(days:DateInt =="Today"? 0:(DateInt =="Yesterday"? 1:(DateInt =="Two Days ago"? 2:(DateInt =="Three Days ago"? 3:(DateInt =="Four Days ago"? 4:(DateInt =="Five Days ago"? 5:(DateInt =="Six Days ago"? 6:(DateInt =="Seven Days ago"? 7:(DateInt =="Eight Days ago"? 8:(DateInt =="Nine Days ago"? 9:10))))))))))),
           TimeOfDay.now(),
           false,
           false,
         );
 
-//148  175    392   423   451
 
 
         if(IsIncome){
@@ -727,11 +690,7 @@ class _ButtonOnlyState extends State<ButtonOnly> with SingleTickerProviderStateM
         CurrentSumtemp=double.parse(CategoryAmountInput);
         TransectionAmounttemp =CurrentSumtemp;
         DateTime Datetemp = DateTime.now().subtract(Duration(days:DateInt =="Today"? 0:(DateInt =="Yesterday"? 1:(DateInt =="Two Days ago"? 2:3))));
-        // DateTime Datetemp = DateTime.now().subtract(Duration(days:DateInt =="Today"? 0:(DateInt =="Yesterday"? 1:(DateInt =="Two Days ago"? 2:(DateInt =="Three Days ago"? 3:(DateInt =="Four Days ago"? 4:(DateInt =="Five Days ago"? 5:(DateInt =="Six Days ago"? 6:(DateInt =="Seven Days ago"? 7:(DateInt =="Eight Days ago"? 8:(DateInt =="Nine Days ago"? 9:10)))))))))));
         TimeOfDay Timetemp = TimeOfDay.now();
-
-//148  175    392   423   451
-
 
         var TempTransection = Categories(
           IDtemp,
@@ -788,7 +747,6 @@ class _ButtonOnlyState extends State<ButtonOnly> with SingleTickerProviderStateM
         CategoryAmountInput="";
         DateInt="Today";
         Navigator.of(context).pop();
-        // OneCategory.CategoryType=="Incomes"? Navigator.of(context).pushReplacementNamed("incomes_page"): Navigator.of(context).pushReplacementNamed("expenses_page");
         IsIncome? Navigator.of(context).pushReplacementNamed("incomes_page"):Navigator.of(context).pushReplacementNamed("expenses_page");
 
       }
@@ -891,7 +849,6 @@ class _ButtonOnlyState extends State<ButtonOnly> with SingleTickerProviderStateM
                       width: MediaQuery.of(context).size.width * 0.25,
                       child: ElevatedButton(
                         key: btnKey3,
-                        // child: AddMoreCategoriesMenu(),
                         child: Text("Icon Select"),
                         onPressed: onDismissOnlyBeCalledOnce,
                         style: ElevatedButton.styleFrom(
@@ -907,7 +864,6 @@ class _ButtonOnlyState extends State<ButtonOnly> with SingleTickerProviderStateM
                 ),
               ],
             ),
-            // SizedBox(width: MediaQuery.of(context).size.width*0.05,),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
@@ -935,8 +891,6 @@ class _ButtonOnlyState extends State<ButtonOnly> with SingleTickerProviderStateM
                           ),
                           SizedBox(width: 10,),
                           Container(
-                            // width: MediaQuery.of(context).size.height *0.13,
-                            // height: MediaQuery.of(context).size.height *0.3,
                             child: Center(
                                 child: Text(Value_Selected)
                             ),
@@ -972,8 +926,6 @@ class _ButtonOnlyState extends State<ButtonOnly> with SingleTickerProviderStateM
                           ),
                           SizedBox(width: 10,),
                           Container(
-                            // width: MediaQuery.of(context).size.height *0.13,
-                            // height: MediaQuery.of(context).size.height *0.3,
                             child: Center(
                                 child: Text(Value_Selected)
                             ),
@@ -985,7 +937,6 @@ class _ButtonOnlyState extends State<ButtonOnly> with SingleTickerProviderStateM
                   borderRadius: BorderRadius.circular(30),
                   dropdownColor: Colors.white70,
                 ),
-                // SizedBox(width: MediaQuery.of(context).size.width *0.10,),
               ],
             ),
 
@@ -1008,7 +959,6 @@ class _ButtonOnlyState extends State<ButtonOnly> with SingleTickerProviderStateM
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 ElevatedButton(
-                  // child: AddMoreCategoriesMenu(),
                   child: Container(
                       child: Text("Add New Category")
                   ),
@@ -1026,7 +976,6 @@ class _ButtonOnlyState extends State<ButtonOnly> with SingleTickerProviderStateM
                   ),
                 ),
                 ElevatedButton(
-                  // child: AddMoreCategoriesMenu(),
                   child: Text("Cancel"),
                   onPressed: (){
                     AddressofTheImagetemp="";
@@ -1036,11 +985,6 @@ class _ButtonOnlyState extends State<ButtonOnly> with SingleTickerProviderStateM
                     DateInt="Today";
                     Navigator.of(context).pop();
 
-                    // Scaffold.of(context).showSnackBar(SnackBar(
-                    //   content: const Text('Canceled'),
-                    //   duration: const Duration(seconds: 1),
-                    //   backgroundColor: Colors.blueGrey,
-                    // ));
 
 
                   },
@@ -1086,7 +1030,6 @@ class _ButtonOnlyState extends State<ButtonOnly> with SingleTickerProviderStateM
     else {
       AddIncomeExpenses(context,OneCategory, IsIncome);
     }
-    //asddasdas
 
   }
 
@@ -1171,19 +1114,11 @@ class _ButtonOnlyState extends State<ButtonOnly> with SingleTickerProviderStateM
 
 
 
-// abstract class MenuItemProvider {
-//   String get menuTitle;
-//   dynamic get menuUserInfo;
-//   Widget? get menuImage;
-//   TextStyle get menuTextStyle;
-//   TextAlign get menuTextAlign;
-// }
-
 /// Default menu item
 class MenuItem extends MenuItemProvider {
   Widget? image;
   String title;
-  var userInfo; // 额外的菜单荐信息
+  var userInfo;
   TextStyle textStyle;
   TextAlign textAlign;
 

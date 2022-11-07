@@ -1,12 +1,10 @@
 import 'package:flutter/material.dart';
-import '../../Classes/AccountsClass.dart';
 import '../../Classes/All Contralling Dart Files/FiltersForAccounts.dart';
 import 'package:syncfusion_flutter_charts/charts.dart';
 import '../../Classes/ChartData.dart';
 import '../../Classes/colors.dart';
 
 class RadialBarChartForOverview extends StatefulWidget {
-  // const DoughnutChartForOverview({Key? key}) : super(key: key);
 
   final List<RadialBarChartData> chartData;
   final String IsIncomeOrExpense;
@@ -46,28 +44,7 @@ class _RadialBarChartForOverviewState extends State<RadialBarChartForOverview> {
                 borderRadius: BorderRadius.all(Radius.circular(20))
             ),
             child: SfCircularChart(
-                // title: ChartTitle(
-                //     text: IsIncomeOrExpense,
-                //     // Aligns the chart title to left
-                //     alignment: ChartAlignment.center,
-                //     textStyle: TextStyle(
-                //       color: ColourList.ChartTitleTextColor,
-                //       fontFamily: 'Roboto',
-                //       fontSize: 14,
-                //     )
-                // ),
-                // legend: Legend(
-                //     itemPadding: 4,
-                //     textStyle: TextStyle(
-                //       fontSize: 10,
-                //       color: ColourList.ChartLegendTextColor,
-                //     ),
-                //     isVisible: true,
-                //     overflowMode: LegendItemOverflowMode.wrap,
-                //     position: LegendPosition.top
-                // ),
-                // borderColor: Colors.grey.withOpacity(0.1),
-                // borderWidth: 2,
+
                 series: <CircularSeries>[
                   RadialBarSeries<RadialBarChartData, String>(
                     trackColor: Colors.black87.withOpacity(0.002),

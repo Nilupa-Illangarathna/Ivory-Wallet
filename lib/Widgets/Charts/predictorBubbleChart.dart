@@ -1,9 +1,6 @@
-import 'package:animated_widgets/generated/i18n.dart';
 import 'package:flutter/material.dart';
 import 'package:syncfusion_flutter_charts/charts.dart';
 import '../../Classes/colors.dart';
-import '../../Classes/All Contralling Dart Files/TransectionsClass.dart';
-import 'package:intl/intl.dart';
 import '../../Classes/All Contralling Dart Files/category_types.dart';
 import '../../DataFiles/StackedGraphDataFunction.dart';
 import '../../Classes/All Contralling Dart Files/FiltersForAccounts.dart';
@@ -74,9 +71,7 @@ class _PredictorBubbleChartState extends State<PredictorBubbleChart> {
                     Expanded(
                       flex: 2,
                       child:Text(""),
-                      // child: SizedBox(
-                      //   height: 0,
-                      // ),
+
                     ),
                     Expanded(
                       flex: 100,
@@ -128,8 +123,6 @@ class _PredictorBubbleChartState extends State<PredictorBubbleChart> {
 
                           ),
 
-                          // borderWidth: 0,
-                          // plotAreaBorderWidth: 10,
                           series: <ChartSeries>[
                             // Renders scatter chart
                             BubbleSeries<BubbleChartData, String>(
@@ -389,9 +382,6 @@ class _PredictorBubbleChartState extends State<PredictorBubbleChart> {
                       child:SizedBox(
                         width: 10,
                       ),
-                      // child: SizedBox(
-                      //   height: 0,
-                      // ),
                     ),
 
                   ],
@@ -400,9 +390,6 @@ class _PredictorBubbleChartState extends State<PredictorBubbleChart> {
               Expanded(
                 flex: 2,
                 child:Text(""),
-                // child: SizedBox(
-                //   height: 0,
-                // ),
               ),
             ],
           )

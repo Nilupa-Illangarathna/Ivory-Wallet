@@ -1,14 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:intl/intl.dart';
-import 'package:ivorywalletsolution/Classes/All%20Contralling%20Dart%20Files/BudgetsList.dart';
 import '../Classes/colors.dart';
 import '../Classes/All Contralling Dart Files/FiltersForAccounts.dart';
-import '../Classes/All Contralling Dart Files/TransectionsClass.dart';
-import '../Classes/RandomGenerators.dart';
-import '../Shared_Preferences_DB/LoadingClass.dart';
-import '../Classes/All Contralling Dart Files/category_types.dart';
 import 'dart:math';
-import '../DataFiles/Predictor Screen Data Files/DataGenerators/PredictionDataFIles.dart';
 import 'package:simple_cluster/src/hierarchical.dart';
 
 class BottomNavBarV2 extends StatefulWidget {
@@ -65,7 +58,6 @@ class _BottomNavBarV2State extends State<BottomNavBarV2> {
     for(int i=0;i<clusterList2.length;i++){
       List <double> Temp=[];
       for(int j=0;j<clusterList2[i].length;j++){
-        // ListOfItems.add(singles[clusterList2[i][0]]);
         Temp.add(singles[clusterList2[i][j]][0]);
       }
       ListOfItems.add(Temp);
@@ -109,20 +101,6 @@ class _BottomNavBarV2State extends State<BottomNavBarV2> {
                       elevation: 0.1,
                       onPressed: () {
 
-                        // List <ListOfAmountsPerEachCategory> temp = ReturnCostsOfEachDate(Currently_Using_Income_Categories);
-                        //
-                        // Heirarcical_Clusturing();
-
-
-                        // Scaffold.of(context).showSnackBar(SnackBar(
-                        //   content: const Text('snack'),
-                        //   duration: const Duration(seconds: 1),
-                        //   action: SnackBarAction(
-                        //     label: 'ACTION',
-                        //     onPressed: () { },
-                        //   ),
-                        // )
-                        // );
 
                         floatingActionButton: FloatingActionButton(
                           child: Icon(Icons.add),
@@ -160,7 +138,6 @@ class _BottomNavBarV2State extends State<BottomNavBarV2> {
                           ),
                           IconButton(
                               icon: Icon(
-                                // Icons.restaurant_menu,
                                 Icons.list,
                                 size: MediaQuery.of(context).size.width*0.09,
                                 color: currentIndex == 1 ? Colors.orange : Colors.grey.shade400,
@@ -216,7 +193,6 @@ class _BottomNavBarV2State extends State<BottomNavBarV2> {
                               ),
                               onPressed: () {
                                 setBottomBarIndex(3);
-                                // // Navigator.of(context).pushNamed("settings_page");
                                 Navigator.of(context).pushNamed("predictor_page");
 
                               }),

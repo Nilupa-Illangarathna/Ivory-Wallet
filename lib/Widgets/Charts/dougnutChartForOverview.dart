@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import '../../Classes/AccountsClass.dart';
 import '../../Classes/All Contralling Dart Files/FiltersForAccounts.dart';
 import 'package:syncfusion_flutter_charts/charts.dart';
 import '../../Classes/ChartData.dart';
@@ -8,7 +7,6 @@ import '../../Classes/colors.dart';
 
 
 class DoughnutChartForOverview extends StatefulWidget {
-  // const DoughnutChartForOverview({Key? key}) : super(key: key);
 
   final List<DoughnutChartData> chartData;
   final String IsIncomeOrExpense;
@@ -48,11 +46,9 @@ class _DoughnutChartForOverviewState extends State<DoughnutChartForOverview> {
                 color: Colors.transparent,
               borderRadius: BorderRadius.all(Radius.circular(20))
             ),
-            // color: Colors.green,
             child: SfCircularChart(
                 title: ChartTitle(
                     text: IsIncomeOrExpense,
-                    // Aligns the chart title to left
                     alignment: ChartAlignment.center,
                     textStyle: TextStyle(
                       color: ColourList.ChartTitleTextColor,
@@ -61,9 +57,6 @@ class _DoughnutChartForOverviewState extends State<DoughnutChartForOverview> {
                       fontSize: 16,
                     ),
                 ),
-                // borderColor: Colors.grey.withOpacity(0.1),
-                // borderWidth: 2,
-                // Sets 15 logical pixels as margin for all the 4 sides.
                 margin: EdgeInsets.all(0),
                 legend: Legend(
                     itemPadding: 4,
@@ -76,7 +69,6 @@ class _DoughnutChartForOverviewState extends State<DoughnutChartForOverview> {
                     position: LegendPosition.top
                 ),
                 series: <CircularSeries>[
-                  // Renders doughnut chart
                   DoughnutSeries<DoughnutChartData, String>(
                       radius: "90%",
                       innerRadius: "0%",

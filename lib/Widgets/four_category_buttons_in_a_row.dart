@@ -6,7 +6,6 @@ import '../Classes/All Contralling Dart Files/category_types.dart';
 
 
 class FourCategoryButtonsInARow extends StatefulWidget {
-  // const FourCategoryButtonsInARow({Key? key}) : super(key: key);
   bool IsIncome;
   var Currently_Using_Categories;
   var SetOfIndexes;
@@ -88,7 +87,6 @@ class _FourCategoryButtonsInARowState extends State<FourCategoryButtonsInARow> {
 
 
 class TwoCategoryButtonsInARow extends StatefulWidget {
-  // const FourCategoryButtonsInARow({Key? key}) : super(key: key);
 
   bool IsIncome;
   var Currently_Using_Categories;

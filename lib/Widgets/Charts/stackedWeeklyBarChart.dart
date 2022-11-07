@@ -1,16 +1,11 @@
-import 'package:animated_widgets/generated/i18n.dart';
 import 'package:flutter/material.dart';
 import 'package:syncfusion_flutter_charts/charts.dart';
 import '../../Classes/colors.dart';
-import '../../Classes/All Contralling Dart Files/TransectionsClass.dart';
-import 'package:intl/intl.dart';
-import '../../Classes/All Contralling Dart Files/category_types.dart';
 import '../../DataFiles/StackedGraphDataFunction.dart';
 import '../../Classes/All Contralling Dart Files/FiltersForAccounts.dart';
 
 
 class StackWeeklyBarChart extends StatefulWidget {
-  // const StackWeeklyBarChart({Key? key}) : super(key: key);/**/
 
   final double widthfactor;
   final double heightfactor;
@@ -92,8 +87,6 @@ class _StackWeeklyBarChartState extends State<StackWeeklyBarChart> {
                   ,),
               ),
 
-              // borderWidth: 0,
-              // plotAreaBorderWidth: 10,
               series: <ChartSeries>[
 
                 StackedColumnSeries<ChartData, String>(

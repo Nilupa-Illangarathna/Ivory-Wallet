@@ -1,14 +1,10 @@
 import 'package:flutter/material.dart';
 import '../Classes/colors.dart';
-import '../Widgets/category_button.dart';
-import '../Classes/All Contralling Dart Files/category_types.dart';
-import '../Classes/ChartData.dart';
 import '../../DataFiles/Budget related/constants.dart';
 import '../Widgets/Charts/Gauge.dart';
 import '../Classes/All Contralling Dart Files/FiltersForAccounts.dart';
 
 class ThreeGaugesInARow extends StatefulWidget {
-  // const FourCategoryButtonsInARow({Key? key}) : super(key: key);
 
   var Width;
   var Height;
