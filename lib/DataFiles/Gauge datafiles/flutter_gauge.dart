@@ -97,75 +97,10 @@ class _FlutterGaugeState extends State<FlutterGauge> {
 
 
   PublishSubject<double> eventObservable = new PublishSubject();
-//  animateHourHand(index,oldIndex){
-//    if(widget.hand ==Hand.short || widget.animate == Animate.none){
-//      eventObservable.add(index);
-//    }else if(widget.animate == Animate.forget){
-//      if(index + 10 < oldIndex || index - 10 > oldIndex){
-//        if(oldIndex < index){
-//          eventObservable.add(index+(widget.end/30));
-//          Timer(Duration(milliseconds: 1100),(){
-//            eventObservable.add(index-(widget.end/30));
-//            Timer(Duration(milliseconds: 400),(){
-//              eventObservable.add(index);
-//            });
-//          });
-//        }else{
-//          Timer(Duration(milliseconds: 1000),(){
-//            eventObservable.add(index-3);
-//            Timer(Duration(milliseconds: 700),(){
-//              eventObservable.add(index+0.5);
-//              Timer(Duration(milliseconds: 400),(){
-//                eventObservable.add(index);
-//              });
-//            });
-//          });
-//        }
-//      }
-//    }else if(widget.animate == Animate.forget){
-//      if(index + 10 < oldIndex || index - 10 > oldIndex){
-//        if(oldIndex < index){
-//          Timer(Duration(milliseconds: 1000),(){
-//            eventObservable.add(index);
-//            Timer(Duration(milliseconds: 700),(){
-//              eventObservable.add(index-3);
-//              Timer(Duration(milliseconds: 400),(){
-//                eventObservable.add(index);
-//                Timer(Duration(milliseconds: 400),(){
-//                  eventObservable.add(index-2);
-//                  Timer(Duration(milliseconds: 400),(){
-//                    eventObservable.add(index);
-//                  });
-//                });
-//              });
-//            });
-//          });
-//        }else{
-//          Timer(Duration(milliseconds: 1000),(){
-//            eventObservable.add(index-3);
-//            Timer(Duration(milliseconds: 700),(){
-//              eventObservable.add(index+0.5);
-//              Timer(Duration(milliseconds: 400),(){
-//                eventObservable.add(index);
-//              });
-//            });
-//          });
-//        }
-//      }
-//    }else{
-//      eventObservable.add(index);
-//    }
-//
-//
-//
-//  }
-
 
 
   @override
   Widget build(BuildContext context) {
-//    animateHourHand(widget.index,7.0);
-//    eventObservable.add(widget.index);
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       mainAxisSize: MainAxisSize.max,

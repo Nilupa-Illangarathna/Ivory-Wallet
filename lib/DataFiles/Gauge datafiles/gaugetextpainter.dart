@@ -2,8 +2,6 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'flutter_gauge.dart';
 
-import 'fluttergauge.dart';
-
 class GaugeTextPainter extends CustomPainter {
   final hourTickMarkLength = 30.0;
   final minuteTickMarkLength = 0.0;
@@ -124,29 +122,6 @@ class GaugeTextPainter extends CustomPainter {
       }
 
 
-      /*  if (i == end/2) {
-                String label = this.value.toStringAsFixed(1);
-                canvas.save();
-                canvas.translate(0.0, -radius + 50.0);
-
-                textPainter.text = new TextSpan(
-                    text: label,
-                    style: TextStyle(
-                        color: Colors.black,
-                        fontSize: 30.0,
-                      fontFamily: fontFamily
-                    ),
-                );
-                canvas.rotate(-angle * i);
-
-                textPainter.layout();
-
-
-
-                textPainter.paint(canvas, new Offset(-(textPainter.width / 2), -(textPainter.height / 2)));
-
-                canvas.restore();
-            }*/
 
       canvas.rotate(angle);
     }

@@ -1,22 +1,12 @@
 import 'dart:async';
-import 'dart:developer';
 import 'dart:ui';
-
 import 'package:flutter/material.dart';
-import 'package:flutter/material.dart' as prefix0;
 import 'package:flutter/widgets.dart';
 import 'handpainter.dart';
 import 'linepainter.dart';
 import 'package:rxdart/rxdart.dart';
-
 import 'flutter_gauge.dart';
 import 'gaugetextpainter.dart';
-
-
-
-
-
-
 
 
 class FlutterGaugeMain extends StatefulWidget {
@@ -234,33 +224,6 @@ class _FlutterGaugeMainState extends State<FlutterGaugeMain>  with TickerProvide
                         )
                     )
                         :SizedBox(),
-
-                    // Container(
-                    //   child: widget.counterAlign != CounterAlign.none
-                    //   ?new CustomPaint(
-                    //       painter: new GaugeTextCounter(
-                    //           isDecimal: widget.isDecimal,
-                    //           start: this.start,
-                    //           width: widget.widthCircle,
-                    //           counterAlign: widget.counterAlign,
-                    //           end: this.end,
-                    //           value: this.val,
-                    //           fontFamily: widget.fontFamily,
-                    //           textStyle:widget.counterStyle == null
-                    //           ?TextStyle(
-                    //               color: Colors.black,
-                    //               fontSize: 17.0,
-                    //               fontFamily: widget.fontFamily
-                    //           )
-                    //           :widget.counterStyle
-                    //       )
-                    //   )
-                    //   :SizedBox(),
-                    // )
-
-
-
-
                   ]
               ),
             );
