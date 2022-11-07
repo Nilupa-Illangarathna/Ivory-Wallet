@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
 
-import '../../SnackBars/SnackBar.dart';
-// import '../../DataFiles/SharingTextsAndFilesRelated/share_button_widget.dart';
-import '../../DataFiles/SharingTextsAndFilesRelated/textfield_widget.dart';
 import 'package:share/share.dart';
 
 class ShareTextWidget extends StatefulWidget {
@@ -29,7 +26,6 @@ class _ShareTextWidgetState extends State<ShareTextWidget> {
               SizedBox(height: 32),
               ElevatedButton(onPressed: () async {
                 if (false) {
-                  // Utils.showSnackbar(context, message: 'Enter a caption!');
                 } else {
                   Share.share("");
                 }
