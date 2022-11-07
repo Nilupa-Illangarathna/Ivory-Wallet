@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'category_types.dart';
-import 'dart:math';
 import 'FiltersForAccounts.dart';
 import '../RandomGenerators.dart';
 
@@ -87,13 +86,6 @@ bool CheckTransectionAvailability(String IncomeOExpenseInput){
   }
   return Return;
 }
-
-
-
-
-
-
-// List <Categories> AllTransectionsForTheTime = [];
 
 
 

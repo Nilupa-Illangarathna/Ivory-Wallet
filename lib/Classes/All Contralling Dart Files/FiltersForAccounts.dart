@@ -3,10 +3,6 @@ import 'category_types.dart';
 import 'TransectionsClass.dart';
 
 
-
-// DateTime(DateTime.now().year, DateTime.now().month, DateTime.now().day)
-
-
 class CurrentFilters{
   String AccountType;
   String IncomeOrExpense;

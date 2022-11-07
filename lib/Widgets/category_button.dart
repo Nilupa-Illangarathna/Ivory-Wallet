@@ -1036,11 +1036,11 @@ class _ButtonOnlyState extends State<ButtonOnly> with SingleTickerProviderStateM
                     DateInt="Today";
                     Navigator.of(context).pop();
 
-                    Scaffold.of(context).showSnackBar(SnackBar(
-                      content: const Text('Canceled'),
-                      duration: const Duration(seconds: 1),
-                      backgroundColor: Colors.blueGrey,
-                    ));
+                    // Scaffold.of(context).showSnackBar(SnackBar(
+                    //   content: const Text('Canceled'),
+                    //   duration: const Duration(seconds: 1),
+                    //   backgroundColor: Colors.blueGrey,
+                    // ));
 
 
                   },

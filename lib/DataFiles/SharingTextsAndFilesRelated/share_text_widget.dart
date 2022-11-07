@@ -29,7 +29,7 @@ class _ShareTextWidgetState extends State<ShareTextWidget> {
               SizedBox(height: 32),
               ElevatedButton(onPressed: () async {
                 if (false) {
-                  Utils.showSnackbar(context, message: 'Enter a caption!');
+                  // Utils.showSnackbar(context, message: 'Enter a caption!');
                 } else {
                   Share.share("");
                 }
