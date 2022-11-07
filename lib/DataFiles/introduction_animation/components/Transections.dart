@@ -135,63 +135,6 @@ class CareView extends StatelessWidget {
                       textAlign: TextAlign.center,
                     ),
                   ),
-                  // Padding(
-                  //   padding: EdgeInsets.only(
-                  //       left: 64, right: 64, top: 0, bottom: 16),
-                  //   child: Row(
-                  //     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  //     children: [
-                  //       Text(
-                  //         "Deleting",
-                  //         style: TextStyle(
-                  //           fontSize: 16,
-                  //           fontWeight: FontWeight.w800,
-                  //           color: Colors.grey.withOpacity(0.8),
-                  //         ),
-                  //         textAlign: TextAlign.center,
-                  //       ),
-                  //       Text(
-                  //         "Sharing",
-                  //         style: TextStyle(
-                  //           fontSize: 16,
-                  //           fontWeight: FontWeight.w800,
-                  //           color: Colors.grey.withOpacity(0.8),
-                  //         ),
-                  //         textAlign: TextAlign.center,
-                  //       ),
-                  //
-                  //
-                  //     ],
-                  //   ),
-                  // ),
-                  // Padding(
-                  //   padding: EdgeInsets.only(
-                  //       left: 64, right: 64, top: 0, bottom: 16),
-                  //   child: Row(
-                  //     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  //     children: [
-                  //       Text(
-                  //         "Filtering",
-                  //         style: TextStyle(
-                  //           fontSize: 16,
-                  //           fontWeight: FontWeight.w800,
-                  //           color: Colors.grey.withOpacity(0.8),
-                  //         ),
-                  //         textAlign: TextAlign.center,
-                  //       ),
-                  //       Text(
-                  //         "Notes",
-                  //         style: TextStyle(
-                  //           fontSize: 16,
-                  //           fontWeight: FontWeight.w800,
-                  //           color: Colors.grey.withOpacity(0.8),
-                  //         ),
-                  //         textAlign: TextAlign.center,
-                  //       ),
-                  //
-                  //     ],
-                  //   ),
-                  // ),
                 ],
               ),
             ],

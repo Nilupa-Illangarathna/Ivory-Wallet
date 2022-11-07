@@ -9,8 +9,6 @@ import 'package:flutter/material.dart';
 import '../../Shared_Preferences_DB/LoadingClass.dart';
 
 class IntroductionAnimationScreen extends StatefulWidget {
-  // const IntroductionAnimationScreen({Key? key}) : super(key: key);
-
 
   @override
   _IntroductionAnimationScreenState createState() =>
@@ -114,7 +112,6 @@ class _IntroductionAnimationScreenState
     } else if (_animationController!.value > 0.6 &&
         _animationController!.value <= 0.8) {
       await _signUpClick();
-      // onNextClicksetHHome;
     }
   }
 

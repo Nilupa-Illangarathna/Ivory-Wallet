@@ -106,10 +106,10 @@ class CenterNextButton extends StatelessWidget {
                     child: _signUpMoveAnimation.value > 0.7
                         ? InkWell(
                       key: ValueKey('Sign Up button'),
-                      // onTap: (){Navigator.of(context).popUntil(ModalRoute.withName('homepage'));},
+
                       onTap:() {
                           _signUpClick();
-                          // Navigator.pop(context);
+
                           Navigator.of(context).pushReplacementNamed("homepage");
                         },
                       child: Padding(
@@ -153,14 +153,7 @@ class CenterNextButton extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  // Text(
-                  //   'You can visit this intro at any time',
-                  //   style: TextStyle(
-                  //     color: Colors.grey,
-                  //     fontSize: 14,
-                  //     fontWeight: FontWeight.normal,
-                  //   ),
-                  // ),
+
                   Text(
                     'Lets\' get to   ',
                     style: TextStyle(
