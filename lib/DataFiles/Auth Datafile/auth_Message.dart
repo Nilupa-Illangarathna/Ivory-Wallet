@@ -34,7 +34,6 @@ class _Auth_MessageState extends State<Auth_Message> {
   Future<void> _getAuth() async{
     bool isAuth = false;
 
-    //loaded a dialog to scan fingerprint
     try{
       isAuth = await authentication.authenticate(
           localizedReason: 'Scan your finger print to access the app',
@@ -43,12 +42,8 @@ class _Auth_MessageState extends State<Auth_Message> {
           stickyAuth: true
       );
 
-      //if fingerprint scan match then
-      //isAuth = true
-      // therefore will navigate user to WelcomePage/HomePage of the App
       if(isAuth){
         Navigator.of(context).pop();
-        // Navigator.of(context).pushNamed("homepage");
       }
 
       print(isAuth);
