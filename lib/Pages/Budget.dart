@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import '../DataFiles/Budget related/constants.dart';
-import '../DataFiles/Budget related/data.dart';
 import '../DataFiles/Budget related/budgetSetterSettings.dart';
 import '../DataFiles/Budget related/shared.dart';
 import '../Classes/All Contralling Dart Files/category_types.dart';

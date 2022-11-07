@@ -2,13 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:ivorywalletsolution/Classes/All%20Contralling%20Dart%20Files/category_types.dart';
 import 'constants.dart';
 import 'shared.dart';
-import 'data.dart';
-import 'dart:math';
 import '../../Classes/All Contralling Dart Files/TransectionsClass.dart';
 import '../../Classes/All Contralling Dart Files/FiltersForAccounts.dart';
 import '../../Classes/All Contralling Dart Files/BudgetsList.dart';
-import '../../Widgets/curved_bottom_navigation_bar.dart';
-import '../../Classes/All Contralling Dart Files/FiltersForAccounts.dart';
 import '../../Shared_Preferences_DB/LoadingClass.dart';
 import '../../Data_Load_From_DB/BudgetsBD/BudgetsFunctions.dart';
 import '../../Data_Load_From_DB/notes.dart';
@@ -78,24 +74,6 @@ class _DetailState extends State<Detail> {
     }
     return Return;
   }
-
-  // void SetNewValue(String STR,double CategoryAmountInput){
-  //   for(int i=0;i<BudgetValues.length;i++){
-  //     if(FiltersForTheApp.AccountType=="All Account"){
-  //       if(BudgetValues[i].CategoryName==STR){
-  //         BudgetValues[i].TransectionAmount = CategoryAmountInput;
-  //       }
-  //     }
-  //     else if(FiltersForTheApp.AccountType==BudgetValues[i].AccountData){
-  //       if(BudgetValues[i].CategoryName==STR){
-  //         BudgetValues[i].TransectionAmount = CategoryAmountInput;
-  //       }
-  //     }
-  //
-  //     print(BudgetValues[i].TransectionAmount);
-  //   }
-  //
-  // }
 
 
 
@@ -294,9 +272,7 @@ class _DetailState extends State<Detail> {
                     }
 
                   }
-                  // for (int i = 0; i < BudgetValues.length; i++) {
-                  //     print(BudgetValues[i].TransectionAmount);
-                  // }
+
                 });
               },
               child: Text("Set Value"),
