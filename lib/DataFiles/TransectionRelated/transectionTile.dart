@@ -1,19 +1,8 @@
-
-import 'dart:math';
 import 'package:flutter/material.dart';
-import 'package:flutter_slidable/flutter_slidable.dart';
-import 'package:ivorywalletsolution/Classes/All%20Contralling%20Dart%20Files/category_types.dart';
-import '../../../Classes/All Contralling Dart Files/TransectionsClass.dart';
-import '../../../Classes/colors.dart';
 import '../../../Classes/All Contralling Dart Files/FiltersForAccounts.dart';
 import 'package:intl/intl.dart';
-import '../../../DataFiles/Budget related/constants.dart';
-
-
 
 class TransectionTile extends StatefulWidget {
-  // const TransectionTile({Key? key}) : super(key: key);
-
   final item;
   TransectionTile(this.item);
 
@@ -45,7 +34,6 @@ class _TransectionTileState extends State<TransectionTile> {
               width: MediaQuery.of(context).size.width* widthfactor,
               height: MediaQuery.of(context).size.height * heightfactor,
               decoration: BoxDecoration(
-                // color: Colors.white,
                 borderRadius: BorderRadius.all(
                   Radius.circular(10),
                 ),
@@ -169,9 +157,6 @@ class _TransectionTileState extends State<TransectionTile> {
                                     child: Column(
                                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                       children: [
-                                        // SizedBox(),
-                                        // SizedBox(),
-
                                         Row(
                                           mainAxisAlignment: MainAxisAlignment.start,
                                           children: [
@@ -220,8 +205,6 @@ class _TransectionTileState extends State<TransectionTile> {
                                             ),
                                           ],
                                         ),
-                                        // SizedBox(),
-                                        // SizedBox(),
                                       ],
                                     ),
                                   ),
@@ -247,18 +230,6 @@ class _TransectionTileState extends State<TransectionTile> {
                         child: Image.asset(item.IconAddress)
                     ),
 
-
-                    // Container(
-                    //     padding: EdgeInsets.all(MediaQuery.of(context).size.width * 0.026 * widthfactor),
-                    //     decoration: BoxDecoration(
-                    //       shape: BoxShape.circle,
-                    //       color: (item.ButtonColor).withOpacity(0.8),
-                    //     ),
-                    //     height: MediaQuery.of(context).size.width *1.3* heightfactor,
-                    //     width: MediaQuery.of(context).size.width * 0.12 * widthfactor,
-                    //     child: Image.asset(item.IconAddress)
-                    // ),
-                    // SizedBox(width: 40,)
                   ],
                 ),
               ),
@@ -270,32 +241,9 @@ class _TransectionTileState extends State<TransectionTile> {
           ],
         ),
 
-        // SizedBox(
-        //   height: MediaQuery.of(context).size.width * heightfactor*2,
-        //   width: MediaQuery.of(context).size.width * heightfactor*2,
-        //   child: Image.asset(item.IconAddress,fit: BoxFit.fill,),
-        // ),
-        // Container(
-        //     padding: EdgeInsets.all(MediaQuery.of(context).size.width * 0.026 * widthfactor),
-        //     decoration: BoxDecoration(
-        //       shape: BoxShape.circle,
-        //       color: (item.ButtonColor).withOpacity(0.8),
-        //     ),
-        //     height: MediaQuery.of(context).size.width *1.3* heightfactor,
-        //     width: MediaQuery.of(context).size.width * 0.12 * widthfactor,
-        //     child: Image.asset(item.IconAddress)
-        // ),
-
       ],
     );
   }
 }
-
-
-// Icon(
-// Icons.favorite,
-// color: Colors.red,
-// size: 35,
-// ),
 
 
