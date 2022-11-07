@@ -6,9 +6,7 @@ import '../Widgets/curved_bottom_navigation_bar.dart';
 import '../Classes/AccountsClass.dart';
 import '../Classes/All Contralling Dart Files/FiltersForAccounts.dart';
 import '../Classes/ChartData.dart';
-import '../Widgets/Charts/dougnutChartForOverview.dart';
 import 'package:syncfusion_flutter_charts/charts.dart';
-import '../Classes/ChartData.dart';
 
 class IncomesPage extends StatefulWidget {
   // const IncomesPage({Key? key}) : super(key: key);
@@ -47,7 +45,6 @@ class _IncomesPageState extends State<IncomesPage> {
         title: Container(
             width: MediaQuery.of(context).size.width *1,
             height: MediaQuery.of(context).size.height *0.14,
-            // color: Colors.brown.withOpacity(0.12),
             child: Column(
               children: [
 
@@ -80,7 +77,6 @@ class _IncomesPageState extends State<IncomesPage> {
                               SizedBox(width: 10,),
                               Container(
                                 width: MediaQuery.of(context).size.height *0.13,
-                                // height: MediaQuery.of(context).size.height *0.3,
                                 child: Center(
                                     child: Text(Value_Selected)
                                 ),
@@ -96,7 +92,6 @@ class _IncomesPageState extends State<IncomesPage> {
                         fontWeight: FontWeight.w800,
                       ),
                     ),
-                    // SizedBox(width: 20?,)
                   ],
                 ),
                 SizedBox(height: 5,),

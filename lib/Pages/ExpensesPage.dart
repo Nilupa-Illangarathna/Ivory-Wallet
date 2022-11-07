@@ -10,8 +10,6 @@ import 'package:syncfusion_flutter_charts/charts.dart';
 import '../Classes/ChartData.dart';
 
 class ExpensesPage extends StatefulWidget {
-  // const IncomesPage({Key? key}) : super(key: key);
-
   bool IsIncome;
   ExpensesPage(this.IsIncome);
 

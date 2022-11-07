@@ -2,12 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:ivorywalletsolution/Classes/All%20Contralling%20Dart%20Files/FiltersForAccounts.dart';
 import 'package:local_auth/local_auth.dart';
-import 'homepage.dart';
-import '../DataFiles/Auth Datafile/auth_Message.dart';
-import '../main.dart';
-// import '../Loading Data From Local Database/LoadingClass.dart';
-import '../DataFiles/introduction_animation/introduction_animation_screen.dart';
-import '../DataFiles/introduction_animation/introduction_animation_screen.dart';
 import '../DataFiles/introduction_animation/components/Transections.dart';
 import '../DataFiles/introduction_animation/components/center_next_button.dart';
 import '../DataFiles/introduction_animation/components/OverviewInstructions.dart';
@@ -15,7 +9,6 @@ import '../DataFiles/introduction_animation/components/IncomeAndExpenses.dart';
 import '../DataFiles/introduction_animation/components/LetsBegin.dart';
 import '../DataFiles/introduction_animation/components/top_back_skip_view.dart';
 import '../DataFiles/introduction_animation/components/welcome_view.dart';
-import 'package:flutter/material.dart';
 import '../Shared_Preferences_DB/LoadingClass.dart';
 import 'navigation_home_screen_with_App_Drawer.dart';
 class AuthPath extends StatefulWidget {
@@ -102,20 +95,9 @@ class _AuthPathState extends State<AuthPath> with TickerProviderStateMixin {
   }
 
 
-  void _onNextClickRebuild() {
-    // build(context);
-    print("Fuck");
-  }
+
 
   AnimationController? _animationController;
-
-  // @override
-  // void initState() {
-  //   _animationController =
-  //       AnimationController(vsync: this, duration: Duration(seconds: 8));
-  //   _animationController?.animateTo(0.0);
-  //   super.initState();
-  // }
 
   @override
   void dispose() {
@@ -129,7 +111,6 @@ class _AuthPathState extends State<AuthPath> with TickerProviderStateMixin {
       body: Stack(
         children: [
           NavigationHomeScreen(),
-          // _Authenticate,
           !isAuth && FiltersForTheApp.FingerPrintOn? Container(
             height: MediaQuery.of(context).size.height,
             width: MediaQuery.of(context).size.width,
@@ -157,22 +138,11 @@ class _AuthPathState extends State<AuthPath> with TickerProviderStateMixin {
                     ),
                   ],
 
-                  // Text(
-                  //   "    Income    ",
-                  //   style: TextStyle(
-                  //     fontSize: 40,
-                  //     fontWeight: FontWeight.w800,
-                  //     color: Colors.white24,
-                  //   ),
-                  // ),
-
                 ),
                 onPressed: () {
                   _checkBio();
                 },
-              // color: Colors.transparent,
                 style: ElevatedButton.styleFrom(
-                  // shape: const StadiumBorder(),
                     primary: Colors.transparent,
                   elevation: 200,
                 )
@@ -231,32 +201,6 @@ class _AuthPathState extends State<AuthPath> with TickerProviderStateMixin {
         ],
       ),
 
-
-
-
-      // Column(
-      //   mainAxisAlignment: MainAxisAlignment.center,
-      //   children: [
-      //     const Text(
-      //       'Flutter Local Fingerprint Auth',
-      //       style: TextStyle(fontSize: 30),
-      //     ),
-      //     const SizedBox(
-      //       height: 30,
-      //     ),
-      //     Container(
-      //         padding: const EdgeInsets.only(left: 10, right: 10),
-      //         height: 70,
-      //         width: MediaQuery.of(context).size.width,
-      //         child: ElevatedButton(
-      //             child: const Text('Check Auth'),
-      //             onPressed: () {
-      //               _checkBio();
-      //             },
-      //             style: ElevatedButton.styleFrom(
-      //                 shape: const StadiumBorder(), primary: Colors.green))),
-      //   ],
-      // ),
     );
   }
 

@@ -126,7 +126,7 @@ class _BottomNavBarV2State extends State<BottomNavBarV2> {
 
                         floatingActionButton: FloatingActionButton(
                           child: Icon(Icons.add),
-                          onPressed: () {print("Shit");},
+                          onPressed: () {},
                         );
 
                         if(ModalRoute.of(context)!.settings.name!='homepage'){

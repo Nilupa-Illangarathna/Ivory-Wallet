@@ -4,14 +4,9 @@ import 'package:ivorywalletsolution/Classes/All%20Contralling%20Dart%20Files/Tra
 import '../Classes/colors.dart';
 import '../Widgets/curved_bottom_navigation_bar.dart';
 import '../Classes/All Contralling Dart Files/category_types.dart';
-import 'package:animated_widgets/animated_widgets.dart';
-import 'dart:math';
-import '../Widgets/category_button.dart';
 import '../Classes/All Contralling Dart Files/FiltersForAccounts.dart';
-import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 import '../Shared_Preferences_DB/LoadingClass.dart';
 import '../Data_Load_From_DB/notes.dart';
-// import '../Data_Load_From_DB/Budgets_LocalDatabase.dart';
 import '../Data_Load_From_DB/AllTransectionDB/AllTransections_LocalDatabase.dart';
 import '../Data_Load_From_DB/BudgetsBD/Budgets_LocalDatabase.dart';
 import '../Data_Load_From_DB/BudgetsBD/BudgetsFunctions.dart';
@@ -21,12 +16,11 @@ import '../Data_Load_From_DB/ExpenseCategoryDB/ExpenseCategoryFunctions.dart';
 import '../Data_Load_From_DB/IncomeCategoryDB/IncomeCategory_LocalDatabase.dart';
 import '../Data_Load_From_DB/IncomeCategoryDB/IncomeCategoryFunctions.dart';
 import '../main.dart';
-// import '../HomeScreenRelated/AppBar/appbar.dart';
 
 class HomePage extends StatefulWidget {
 
   Future init() async {
-    // await UserSecureStorage.GetAll();
+
   }
 
   void initState() {
@@ -165,11 +159,9 @@ class _HomePageState extends State<HomePage> {
 
       for(int i=0;i<Currently_Using_Expense_Categories.length;i++){
         for(int j=0;j<BudgetsNoteList.length;j++){
-          // if(BudgetsNoteList[j].ID.toInt()>BudgetsNoteList[j+1].ID.toInt()){
           if(Currently_Using_Expense_Categories[i].CategoryName==BudgetsNoteList[j].CategoryName){
             temp.add(BudgetsNoteList[j]);
           }
-          // }
         }
       }
       BudgetValues=await UserSecureStorage.get_BackCategory_List(temp);
@@ -209,7 +201,6 @@ class _HomePageState extends State<HomePage> {
                 BorderRadius.only(bottomRight: Radius.circular(70),/*bottomLeft: Radius.circular(70)*/)
             ),
             title: Stack(
-              // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 Center(
                   child: Text(
@@ -223,15 +214,6 @@ class _HomePageState extends State<HomePage> {
                 ),
               ],
             )
-          // actions: [
-          //   Row(
-          //     mainAxisAlignment: MainAxisAlignment.center,
-          //     children: [
-          //       Text('Let Me Flutter',),
-          //
-          //     ],
-          //   )
-          // ],
         ),
 
 
@@ -454,86 +436,6 @@ class _HomePageState extends State<HomePage> {
                 ),
               ),
             ),
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            // Stack(
-            //   children: [
-            //     Material(
-            //       elevation: elevationAppBar,
-            //       borderRadius: BorderRadius.only(bottomLeft: Radius.circular(MediaQuery.of(context).size.height*0.10),bottomRight: Radius.circular(MediaQuery.of(context).size.height*0.0)),
-            //       child: Container(
-            //           height: MediaQuery.of(context).size.height * 0.18,
-            //           width: MediaQuery.of(context).size.width,
-            //           child: ElevatedButton(
-            //             onPressed: () {
-            //
-            //
-            //               DateTime printing =DateTime.now().subtract(Duration(days: Random().nextInt(7),hours: Random().nextInt(24),minutes: Random().nextInt(60),seconds: Random().nextInt(60),));
-            //               final now = DateTime. now();
-            //               final difference = now.difference(printing);
-            //
-            //
-            //               print("$printing , ${difference}");
-            //               },
-            //             child: Column(
-            //               mainAxisAlignment: MainAxisAlignment.spaceAround,
-            //               children: [
-            //                 SizedBox(height: 1,),
-            //                 Row(
-            //                   mainAxisAlignment: MainAxisAlignment.spaceAround,
-            //                   children: [
-            //                     SizedBox(width: 1,),
-            //                     Text("  Ivory Wallet",
-            //                       style: TextStyle(
-            //                         fontFamily: "SelfDeceptionRegular",
-            //                         fontSize: 40,
-            //                         color: Colors.black,
-            //                       ),
-            //                     ),
-            //                     Container(
-            //                       width: 60,
-            //                       height: 60,
-            //                       child: Image.asset("assets/AppIcon/Icon.png"),
-            //                     ),
-            //                   ],
-            //                 ),
-            //               ],
-            //             ),
-            //             style: ElevatedButton.styleFrom(
-            //               elevation: 4,
-            //               primary: Colors.grey,
-            //               // shadowColor: Colors.white,
-            //               shape: RoundedRectangleBorder(
-            //                 borderRadius: BorderRadius.only(topRight: Radius.circular(MediaQuery.of(context).size.height*0.0),topLeft: Radius.circular(MediaQuery.of(context).size.height*0.0),bottomRight:  Radius.circular(MediaQuery.of(context).size.height*0.10)), // <-- Radius
-            //               ),
-            //             ),
-            //           )
-            //       ),
-            //     ),
-            //
-            //   ],
-            // ),
-
 
 
 //Bottom navigation bar

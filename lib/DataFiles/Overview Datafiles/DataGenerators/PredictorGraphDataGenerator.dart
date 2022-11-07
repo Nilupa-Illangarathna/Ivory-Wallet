@@ -122,7 +122,6 @@ List<BubbleChartData> Create_Bubble_Charts_DataList(DateTime starting_date,DateT
   for(int dateIndex=difference-1;dateIndex>=0;dateIndex--){
     final date = DateTime.now().subtract(Duration(days: dateIndex));
     final date1=DateFormat('dd/MM/yyyy').format(date);
-    // ChartData temp = ChartData(date1.toString(), [OneSectorDefine("fuck", 60, Colors.red)]);
     List <Categories> Currently_Using_Categories_temp;
     IncomeOrExpense =="Incomes"? Currently_Using_Categories_temp=Currently_Using_Income_Categories : Currently_Using_Categories_temp=Currently_Using_Expense_Categories;
     List <BubbleOneSectorDefine> tempcategoryaddition= [];
