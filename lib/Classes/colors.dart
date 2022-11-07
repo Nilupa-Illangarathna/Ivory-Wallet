@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'dart:math';
 
 class HexColor extends Color {
   static int _getColorFromHex(String hexColor) {
@@ -37,22 +36,13 @@ class ColorsClass{
 
 
 
-  // final Expenses_Tile_Gradient = LinearGradient(colors: [HexColor("#D86C9D"),HexColor("#2E1E57")], begin: Alignment.centerLeft, end: Alignment.bottomRight,);
-  // final Incomes_Tile_Gradient = LinearGradient(colors: [HexColor("#8E43BF"),HexColor("#3F2A78")], begin: Alignment.centerLeft, end: Alignment.centerRight,);
-  // final Overview_Tile_Gradient = LinearGradient(colors: [HexColor("#D86C9D"),HexColor("#66325A")], begin: Alignment.center, end: Alignment.centerRight,);
   final Expenses_Tile_Gradient = LinearGradient(colors: [HexColor("#001C34"),HexColor("#2E1E57")], begin: Alignment.centerLeft, end: Alignment.bottomRight,);
   final Incomes_Tile_Gradient = LinearGradient(colors: [HexColor("#C8BFE7"),HexColor("#C0C0C0")], begin: Alignment.centerLeft, end: Alignment.centerRight,);
   final Overview_Tile_Gradient = LinearGradient(colors: [HexColor("#8F6A5B"),HexColor("#F2B39B")], begin: Alignment.center, end: Alignment.centerRight,);
 
 
-  //Tramsections Colors
-  // List <LinearGradient> GradientsForTransections=[LinearGradient(colors: [HexColor("#1E2261").withOpacity(0.3),HexColor("#1E2261").withOpacity(1)], begin: Alignment.bottomLeft, end: Alignment.bottomRight,transform: GradientRotation(pi), ),];
-  // List <LinearGradient> GradientsForTransectionsBackground=[LinearGradient(colors: [HexColor("#16417C"),HexColor("#0F2D57")], begin: Alignment.bottomLeft, end: Alignment.topRight,transform: GradientRotation(pi), ),];
-
-  //Overview page background color
-  // final OverviewBackgroundColor = HexColor("#507F80");
+  //Transactions Colors
   final OverviewBackgroundColor = Colors.white;
-  // final OverviewChartBackground =  Colors.grey.withOpacity(0.8);
   final OverviewChartBackground =  Colors.white;
   final ChartTitleTextColor = Colors.black.withOpacity(0.5);
   final ChartPointerTextColor = Colors.black.withOpacity(0.7);
@@ -92,8 +82,6 @@ class ColorsClass{
 
 
   final HomepageBackground_Colour = HexColor("#8D93B4");
-
-
 
 
 }

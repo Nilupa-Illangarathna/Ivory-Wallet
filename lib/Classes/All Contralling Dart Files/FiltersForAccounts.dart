@@ -1,7 +1,5 @@
-import 'package:flutter/material.dart';
 import 'category_types.dart';
 import 'TransectionsClass.dart';
-
 
 class CurrentFilters{
   String AccountType;
