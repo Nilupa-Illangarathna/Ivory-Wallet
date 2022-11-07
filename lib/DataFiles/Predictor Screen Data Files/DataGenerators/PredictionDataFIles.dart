@@ -1,16 +1,9 @@
 import 'package:flutter/material.dart';
 import '../../../Classes/All Contralling Dart Files/category_types.dart';
 import '../../../Classes/All Contralling Dart Files/FiltersForAccounts.dart';
-import '../../../Classes/All Contralling Dart Files/BudgetsList.dart';
-import '../../../Classes/colors.dart';
-import '../../../Classes/AccountsClass.dart';
 import '../../../Classes/All Contralling Dart Files/TransectionsClass.dart';
-import '../FuturePredictorScreen/VerticleListViewForEachCategoryPrediction/meals_list_data.dart';
 import '../../../Classes/enums.dart';
-import 'package:flutter/material.dart';
-import 'package:syncfusion_flutter_charts/charts.dart';
 import '../../../DataFiles/StackedGraphDataFunction.dart';
-import '../../../Classes/All Contralling Dart Files/FiltersForAccounts.dart';
 import 'package:intl/intl.dart';
 
 //Total Costs per each Category each day as a list
@@ -134,7 +127,6 @@ List<BubbleChartData> Create_Bubble_Charts_DataList(DateTime starting_date,DateT
   for(int dateIndex=difference+differencefromNowToFirstOfNextMonth-1;dateIndex>=0;dateIndex--){
     final date = DateTime.utc(DateTime.now().year, DateTime.now().month+1, 1).subtract(Duration(days: dateIndex));
     final date1=DateFormat('dd/MM/yyyy').format(date);
-    // ChartData temp = ChartData(date1.toString(), [OneSectorDefine("fuck", 60, Colors.red)]);
     List <Categories> Currently_Using_Categories_temp;
     IncomeOrExpense =="Incomes"? Currently_Using_Categories_temp=Currently_Using_Income_Categories : Currently_Using_Categories_temp=Currently_Using_Expense_Categories;
     List <BubbleOneSectorDefine> tempcategoryaddition= [];
@@ -145,14 +137,11 @@ List<BubbleChartData> Create_Bubble_Charts_DataList(DateTime starting_date,DateT
       if(categoryIndex<Currently_Using_Categories_temp.length) {
 
         Categories TempCategry=Currently_Using_Categories_temp[categoryIndex];
-        // TempCategry.TransectionAmount=50;
         tempcategoryaddition.add(BubbleOneSectorDefine(Currently_Using_Categories_temp[categoryIndex].CategoryName, 0, Currently_Using_Categories_temp[categoryIndex].ButtonColor,Currently_Using_Categories_temp[categoryIndex],true));
       }
       else{
         tempcategoryaddition.add(BubbleOneSectorDefine("", 0, Colors.white,Currently_Using_Categories_temp[0],true));
       }
-      // print(tempcategoryaddition[tempcategoryaddition.length-1].Category);
-
 
 
 
@@ -167,20 +156,16 @@ List<BubbleChartData> Create_Bubble_Charts_DataList(DateTime starting_date,DateT
     if(IncomeOrExpense=="Incomes" && AllTransectionsForTheTime[dateIndex].CategoryType=="Incomes" && (FiltersForTheApp.AccountType=="All Account" ||
         FiltersForTheApp.AccountType=="Card" && AllTransectionsForTheTime[dateIndex].AccountData =="Card"||
         FiltersForTheApp.AccountType=="Cash" && AllTransectionsForTheTime[dateIndex].AccountData =="Cash")){
-      // if(FiltersForTheApp.IncomeOrExpense=="All Types")
 
 
 
-      // print("${AllTransectionsForTheTime[dateIndex].ID}");
       final date1 = DateFormat('dd/MM/yyyy').format(AllTransectionsForTheTime[dateIndex].Date);
 
       for (int checkDate = 0; checkDate < tempchartData.length; checkDate++) {
         if (tempchartData[checkDate].Date == date1) {
-          // print("${tempchartData[checkDate].Date} is equal to ${date1} and index is${checkDate}");
           for (int CategoryIndex = 0; CategoryIndex < 12; CategoryIndex++) {
             if (tempchartData[checkDate].Sectors[CategoryIndex].Category == AllTransectionsForTheTime[dateIndex].CategoryName) {
               tempchartData[checkDate].Sectors[CategoryIndex].size+=AllTransectionsForTheTime[dateIndex].TransectionAmount;
-              // print(tempchartData[checkDate].Sectors[CategoryIndex].size);
             }
           }
         }
@@ -191,18 +176,15 @@ List<BubbleChartData> Create_Bubble_Charts_DataList(DateTime starting_date,DateT
     else if(IncomeOrExpense=="Expenses" && AllTransectionsForTheTime[dateIndex].CategoryType=="Expenses" && (FiltersForTheApp.AccountType=="All Account" ||
         FiltersForTheApp.AccountType=="Card" && AllTransectionsForTheTime[dateIndex].AccountData =="Card"||
         FiltersForTheApp.AccountType=="Cash" && AllTransectionsForTheTime[dateIndex].AccountData =="Cash")){
-      // print("${AllTransectionsForTheTime[dateIndex].ID}");
       final date1 = DateFormat('dd/MM/yyyy')
           .format(AllTransectionsForTheTime[dateIndex].Date);
       for (int checkDate = 0;
       checkDate < tempchartData.length;
       checkDate++) {
         if (tempchartData[checkDate].Date == date1) {
-          // print("${tempchartData[checkDate].Date} is equal to ${date1} and index is${checkDate}");
           for (int CategoryIndex = 0; CategoryIndex < 12; CategoryIndex++) {
             if (tempchartData[checkDate].Sectors[CategoryIndex].Category == AllTransectionsForTheTime[dateIndex].CategoryName) {
               tempchartData[checkDate].Sectors[CategoryIndex].size+=AllTransectionsForTheTime[dateIndex].TransectionAmount;
-              // print(tempchartData[checkDate].Sectors[CategoryIndex].size);
             }
           }
         }
@@ -212,22 +194,9 @@ List<BubbleChartData> Create_Bubble_Charts_DataList(DateTime starting_date,DateT
 
 
 
-  // for (int CategoryIndex = 0; CategoryIndex < 12; CategoryIndex++) {
-  //   List <int> CategoryAmounts=[];
-  //   for(int numberOfDays=0;numberOfDays<FiltersForTheApp.how_many_Days_pastData_To_Be_Considered;numberOfDays++){
-  //     CategoryAmounts.add(tempchartData[numberOfDays]==0? 0:tempchartData[numberOfDays].Sectors.);
-  //   }
-  // }
-  //
-
-
   for (int checkDate = 0; checkDate < tempchartData.length; checkDate++) {
     if (tempchartData[checkDate].Date == DateFormat('dd/MM/yyyy').format(DateTime.now().add(Duration(days: 2)))) {
 
-
-
-
-      // print("${tempchartData[checkDate].Date} is equal to ${date1} and index is${checkDate}");
       for (int CategoryIndex = 0; CategoryIndex < 12; CategoryIndex++) {
         tempchartData[checkDate].Sectors[CategoryIndex].size+=100*(CategoryIndex*2)-10*(12-CategoryIndex);
         tempchartData[checkDate].Sectors[CategoryIndex].BoldOrNot=false;

@@ -4,7 +4,6 @@ import '../UniqueTitle/UniqeTitle.dart';
 import '../SettingsForFuturePrediction/fitness_app_theme.dart';
 import '../VerticleListViewForEachCategoryPrediction/meals_list_view.dart';
 import 'package:flutter/material.dart';
-import '../../../../Widgets/Charts/predictorBubbleChart.dart';
 
 class MyDiaryScreen extends StatefulWidget {
   const MyDiaryScreen({Key? key, this.animationController}) : super(key: key);
@@ -139,43 +138,6 @@ class _MyDiaryScreenState extends State<MyDiaryScreen>
 
 
 
-
-    // listViews.add(
-    //   await WeeklySplineBarChart(0.96,0.4,"Expenses"),
-    // );
-
-
-    // listViews.add(
-    //   await TitleView(
-    //     titleTxt: 'Water',
-    //     subTxt: 'Aqua SmartBottle',
-    //     animation: Tween<double>(begin: 0.0, end: 1.0).animate(CurvedAnimation(
-    //         parent: widget.animationController!,
-    //         curve:
-    //             Interval((1 / count) * 6, 1.0, curve: Curves.fastOutSlowIn))),
-    //     animationController: widget.animationController!,
-    //   ),
-    // );
-
-    // listViews.add(
-    //   await WaterView(
-    //     mainScreenAnimation: Tween<double>(begin: 0.0, end: 1.0).animate(
-    //         CurvedAnimation(
-    //             parent: widget.animationController!,
-    //             curve: Interval((1 / count) * 7, 1.0,
-    //                 curve: Curves.fastOutSlowIn))),
-    //     mainScreenAnimationController: widget.animationController!,
-    //   ),
-    // );
-    // listViews.add(
-    //   await GlassView(
-    //       animation: Tween<double>(begin: 0.0, end: 1.0).animate(
-    //           CurvedAnimation(
-    //               parent: widget.animationController!,
-    //               curve: Interval((1 / count) * 8, 1.0,
-    //                   curve: Curves.fastOutSlowIn))),
-    //       animationController: widget.animationController!),
-    // );
   }
 
   Future<bool> getData() async {

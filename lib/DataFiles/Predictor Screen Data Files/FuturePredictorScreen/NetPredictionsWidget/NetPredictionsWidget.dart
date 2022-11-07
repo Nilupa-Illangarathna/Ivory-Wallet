@@ -7,7 +7,6 @@ import '../VerticleListViewForEachCategoryPrediction/meals_list_data.dart';
 import '../../DataGenerators/PredictionDataFIles.dart';
 import '../../../../Classes/All Contralling Dart Files/category_types.dart';
 import '../../../../Classes/enums.dart';
-import '../VerticleListViewForEachCategoryPrediction/meals_list_view.dart';
 
 class HexColor extends Color {
   HexColor(final String hexColor) : super(_getColorFromHex(hexColor));
@@ -58,23 +57,6 @@ class _MediterranesnDietViewState extends State<MediterranesnDietView> {
 
   }
 
-  // MealsListData SetListItems(Categories InputCategory) {
-  //   MealsListData temp = MealsListData(
-  //     imagePath: InputCategory.IconAddress,
-  //     titleTxt: InputCategory.CategoryName,
-  //     kacl: InputCategory.CurrentSum.toDouble(),
-  //     meals: <String>[
-  //       InputCategory.CategoryType,
-  //       "Current sum : ",
-  //       "    ${InputCategory.TransectionAmount}"
-  //
-  //     ],
-  //     startColor: InputCategory.ButtonColor,
-  //     endColor: InputCategory.EndColor,
-  //   );
-  //
-  //   return temp;
-  // }
 
   double incomeTotal=0;
 
@@ -123,9 +105,6 @@ class _MediterranesnDietViewState extends State<MediterranesnDietView> {
 
   @override
   Widget build(BuildContext context) {
-
-    // SetData();
-
 
 
     return AnimatedBuilder(
@@ -543,22 +522,9 @@ class _MediterranesnDietViewState extends State<MediterranesnDietView> {
                                               fontSize: BudgetAllocated==0? 13:((((((expenseTotal/BudgetAllocated)*100.toDouble()))*100).toInt()).toDouble())/100<100? 12: 13,
                                               letterSpacing: 0.0,
                                               color: BudgetAllocated==0? Colors.green.withOpacity(0.7) :((((((expenseTotal/BudgetAllocated)*100.toDouble()))*100).toInt()).toDouble())/100<30? Colors.green.withOpacity(0.7):(((((((expenseTotal/BudgetAllocated)*100.toDouble()))*100).toInt()).toDouble())/100<75? Colors.orange.withOpacity(0.7):((((((expenseTotal/BudgetAllocated)*100.toDouble()))*100).toInt()).toDouble())/100<100? Colors.redAccent.withOpacity(0.7):Colors.red.withOpacity(1.0)),
-                                              // color: FitnessAppTheme.grey.withOpacity(0.5),
                                             ),
                                           ),
-                                          // Text(
-                                          //   'Compared to total budget',
-                                          //   textAlign: TextAlign.center,
-                                          //   style: TextStyle(
-                                          //     fontFamily:
-                                          //     FitnessAppTheme.fontName,
-                                          //     fontWeight: FontWeight.bold,
-                                          //     fontSize: 10,
-                                          //     letterSpacing: 0.0,
-                                          //     color: FitnessAppTheme.grey
-                                          //         .withOpacity(0.5),
-                                          //   ),
-                                          // ),
+
                                         ],
                                       ),
                                     ),
@@ -605,7 +571,6 @@ class _MediterranesnDietViewState extends State<MediterranesnDietView> {
                           Expanded(
                             child: Column(
                               mainAxisAlignment: MainAxisAlignment.spaceAround,
-                              // crossAxisAlignment: CrossAxisAlignment.,
                               children: <Widget>[
                                 Text(
                                   'Current income',
@@ -676,7 +641,6 @@ class _MediterranesnDietViewState extends State<MediterranesnDietView> {
                           Expanded(
                             child: Column(
                               mainAxisAlignment: MainAxisAlignment.spaceAround,
-                              // crossAxisAlignment: CrossAxisAlignment.,
                               children: <Widget>[
                                 Text(
                                   'Current expense',

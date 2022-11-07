@@ -1,16 +1,8 @@
 import 'package:flutter/material.dart';
 import '../../../Classes/All Contralling Dart Files/category_types.dart';
 import '../../../Classes/All Contralling Dart Files/FiltersForAccounts.dart';
-import '../../../Classes/All Contralling Dart Files/BudgetsList.dart';
-import '../../../Classes/colors.dart';
-import '../../../Classes/AccountsClass.dart';
 import '../../../Classes/All Contralling Dart Files/TransectionsClass.dart';
-import '../FuturePredictorScreen/VerticleListViewForEachCategoryPrediction/meals_list_data.dart';
-import '../../../Classes/enums.dart';
-import 'package:flutter/material.dart';
-import 'package:syncfusion_flutter_charts/charts.dart';
 import '../../../DataFiles/StackedGraphDataFunction.dart';
-import '../../../Classes/All Contralling Dart Files/FiltersForAccounts.dart';
 import 'package:intl/intl.dart';
 
 //Total Costs per each Category each day as a list
@@ -28,7 +20,6 @@ class ListOfAmountsPerEachCategory{
 
   ListOfAmountsPerEachCategory(this.CategoryData){
     for(int dayCount=0;dayCount<=date2.difference(startday).inDays.toInt();dayCount++){
-      // print(date2.difference(startday).inDays.toInt());
       double count=0.0;
       for(int GoingTheroughTransections=0;GoingTheroughTransections<AllTransectionsForTheTime.length;GoingTheroughTransections++){
         if( AllTransectionsForTheTime[GoingTheroughTransections].CategoryType == this.CategoryData.CategoryType &&
@@ -71,52 +62,6 @@ return DayToDayTotalMoneyInOrOutFlawSetObject;
 }
 
 
-// //Total Per Category for horizontal Tile View
-// List <Categories> horizontal_Tile_View_Data(String IncomeOrExpense, PrecictionPageData EnumVal){
-//
-//   List <ListOfAmountsPerEachCategory> dataList=[];
-//   IncomeOrExpense=="Incomes"? dataList = Function().Income : dataList=Function().Expense;
-//
-//   List <Categories> TempReturnEachCateegoryEndOfTheMonthPredictedTotal=[];
-//
-//   for(int EachCategory=0;EachCategory<2;EachCategory++){
-//     Categories Temp = dataList[EachCategory].CategoryData;
-//
-//     for(int ClusturingList=0;ClusturingList<dataList[EachCategory].ListForEachDay.length;ClusturingList++){
-//       print(dataList[EachCategory].ListForEachDay[ClusturingList]);
-//     }
-//
-//
-//
-//
-//     if(Temp.TransectionAmount!=0  ){ ///////////////////////////////////////////////////////////////////////////////////////////   Methanata danna dawas kiyak onida adu gane predict karanna kiyana eka (&& NoneZeroCostDaysCount>=7) wage   //////////////////////////////////
-//       Temp.CurrentSum = (Temp.TransectionAmount/dataList[EachCategory].ListForEachDay.length).ceil()*30;
-//     }
-//     else{
-//       Temp.CurrentSum=0;
-//     }
-//
-//     TempReturnEachCateegoryEndOfTheMonthPredictedTotal.add(Temp);
-//
-//   }
-//
-//   if(EnumVal==PrecictionPageData.getTotalPredictedPerEachCategory){
-//     return TempReturnEachCateegoryEndOfTheMonthPredictedTotal;
-//   }
-//   else{
-//     return [];
-//   }
-//
-//
-// }
-//
-//
-
-
-
-
-
-
 
 
 List<BubbleChartData> Create_Bubble_Charts_DataList(DateTime starting_date,DateTime ending_date, String IncomeOrExpense,String AccountType){
@@ -127,7 +72,6 @@ List<BubbleChartData> Create_Bubble_Charts_DataList(DateTime starting_date,DateT
   for(int dateIndex=difference-1;dateIndex>=0;dateIndex--){
     final date = DateTime.now().subtract(Duration(days: dateIndex));
     final date1=DateFormat('dd/MM/yyyy').format(date);
-    // ChartData temp = ChartData(date1.toString(), [OneSectorDefine("fuck", 60, Colors.red)]);
     List <Categories> Currently_Using_Categories_temp;
     IncomeOrExpense =="Incomes"? Currently_Using_Categories_temp=Currently_Using_Income_Categories : Currently_Using_Categories_temp=Currently_Using_Expense_Categories;
     List <BubbleOneSectorDefine> tempcategoryaddition= [];
@@ -141,7 +85,6 @@ List<BubbleChartData> Create_Bubble_Charts_DataList(DateTime starting_date,DateT
       else{
         tempcategoryaddition.add(BubbleOneSectorDefine("", 0, Colors.white,Currently_Using_Categories_temp[0],true));
       }
-      // print(tempcategoryaddition[tempcategoryaddition.length-1].Category);
     }
     tempchartData.add(BubbleChartData(date1, tempcategoryaddition),);
   }
@@ -152,22 +95,16 @@ List<BubbleChartData> Create_Bubble_Charts_DataList(DateTime starting_date,DateT
     if(IncomeOrExpense=="Incomes" && AllTransectionsForTheTime[dateIndex].CategoryType=="Incomes" && (FiltersForTheApp.AccountType=="All Account" ||
         FiltersForTheApp.AccountType=="Card" && AllTransectionsForTheTime[dateIndex].AccountData =="Card"||
         FiltersForTheApp.AccountType=="Cash" && AllTransectionsForTheTime[dateIndex].AccountData =="Cash")){
-      // if(FiltersForTheApp.IncomeOrExpense=="All Types")
 
-
-
-      // print("${AllTransectionsForTheTime[dateIndex].ID}");
       final date1 = DateFormat('dd/MM/yyyy')
           .format(AllTransectionsForTheTime[dateIndex].Date);
       for (int checkDate = 0;
       checkDate < tempchartData.length;
       checkDate++) {
         if (tempchartData[checkDate].Date == date1) {
-          // print("${tempchartData[checkDate].Date} is equal to ${date1} and index is${checkDate}");
           for (int CategoryIndex = 0; CategoryIndex < 12; CategoryIndex++) {
             if (tempchartData[checkDate].Sectors[CategoryIndex].Category == AllTransectionsForTheTime[dateIndex].CategoryName) {
               tempchartData[checkDate].Sectors[CategoryIndex].size+=AllTransectionsForTheTime[dateIndex].TransectionAmount;
-              // print(tempchartData[checkDate].Sectors[CategoryIndex].size);
             }
           }
         }
@@ -180,18 +117,15 @@ List<BubbleChartData> Create_Bubble_Charts_DataList(DateTime starting_date,DateT
     else if(IncomeOrExpense=="Expenses" && AllTransectionsForTheTime[dateIndex].CategoryType=="Expenses" && (FiltersForTheApp.AccountType=="All Account" ||
         FiltersForTheApp.AccountType=="Card" && AllTransectionsForTheTime[dateIndex].AccountData =="Card"||
         FiltersForTheApp.AccountType=="Cash" && AllTransectionsForTheTime[dateIndex].AccountData =="Cash")){
-      // print("${AllTransectionsForTheTime[dateIndex].ID}");
       final date1 = DateFormat('dd/MM/yyyy')
           .format(AllTransectionsForTheTime[dateIndex].Date);
       for (int checkDate = 0;
       checkDate < tempchartData.length;
       checkDate++) {
         if (tempchartData[checkDate].Date == date1) {
-          // print("${tempchartData[checkDate].Date} is equal to ${date1} and index is${checkDate}");
           for (int CategoryIndex = 0; CategoryIndex < 12; CategoryIndex++) {
             if (tempchartData[checkDate].Sectors[CategoryIndex].Category == AllTransectionsForTheTime[dateIndex].CategoryName) {
               tempchartData[checkDate].Sectors[CategoryIndex].size+=AllTransectionsForTheTime[dateIndex].TransectionAmount;
-              // print(tempchartData[checkDate].Sectors[CategoryIndex].size);
             }
           }
         }

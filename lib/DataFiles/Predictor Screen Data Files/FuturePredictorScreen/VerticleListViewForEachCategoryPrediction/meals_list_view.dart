@@ -6,7 +6,6 @@ import 'package:flutter/material.dart';
 import '../../DataGenerators/PredictionDataFIles.dart';
 import '../../../../Classes/All Contralling Dart Files/category_types.dart';
 import '../../../../Classes/enums.dart';
-import '../../DataGenerators/PredictionDataFIles.dart';
 import '../WaterFilledBarIndicator/wave_view.dart';
 
 
@@ -304,7 +303,6 @@ class MealsView extends StatelessWidget {
                                         padding: const EdgeInsets.all(6.0),
                                         child: Icon(
                                           Icons.add,
-                                          // color: HexColor(mealsListData!.endColor),
                                           color: mealsListData!.endColor,
                                           size: 24,
                                         ),
