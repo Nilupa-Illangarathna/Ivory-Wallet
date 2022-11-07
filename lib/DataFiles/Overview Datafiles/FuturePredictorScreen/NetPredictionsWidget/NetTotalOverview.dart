@@ -1,13 +1,8 @@
-import '../../../../Classes/All Contralling Dart Files/BudgetsList.dart';
-import '../SettingsForFuturePrediction/fitness_app_theme.dart';
 import 'package:flutter/material.dart';
 import 'dart:math' as math;
 import 'package:ivorywalletsolution/Classes/All%20Contralling%20Dart%20Files/FiltersForAccounts.dart';
 import '../VerticleListViewForEachCategoryPrediction/meals_list_data.dart';
-import '../../DataGenerators/PredictionDataFIles.dart';
 import '../../../../Classes/All Contralling Dart Files/category_types.dart';
-import '../../../../Classes/enums.dart';
-import '../VerticleListViewForEachCategoryPrediction/PieCharts.dart';
 
 class HexColor extends Color {
   HexColor(final String hexColor) : super(_getColorFromHex(hexColor));
@@ -58,81 +53,11 @@ class _NetTotalOverviewState extends State<NetTotalOverview> {
 
   bool isLoading = false;
 
-  // Future refreshNotes() async {
-  //   setState(() => isLoading = true);
-  //   SetData();
-  //   setState(() => isLoading = false);
-  //
-  // }
-  //
-  // // MealsListData SetListItems(Categories InputCategory) {
-  // //   MealsListData temp = MealsListData(
-  // //     imagePath: InputCategory.IconAddress,
-  // //     titleTxt: InputCategory.CategoryName,
-  // //     kacl: InputCategory.CurrentSum.toDouble(),
-  // //     meals: <String>[
-  // //       InputCategory.CategoryType,
-  // //       "Current sum : ",
-  // //       "    ${InputCategory.TransectionAmount}"
-  // //
-  // //     ],
-  // //     startColor: InputCategory.ButtonColor,
-  // //     endColor: InputCategory.EndColor,
-  // //   );
-  // //
-  // //   return temp;
-  // // }
-  //
-  // double incomeTotal=0;
-  //
-  // double expenseTotal=0;
-  //
-  // double BudgetAllocated=0;
-  //
-  // double currentIncomeTotal=0;
-  //
-  // double currentExpenseTotal=0;
-  //
-  // double currentBudgetAllocated=0;
-  //
-  // Future SetData() async{
-  //
-  //   incomeTotal=0;
-  //   expenseTotal=0;
-  //   BudgetAllocated=0;
-  //   currentIncomeTotal=0;
-  //   currentExpenseTotal=0;
-  //   currentBudgetAllocated=0;
-  //
-  //   //INCOME
-  //   horizontal_Tile_View_DataList= await [];
-  //   horizontal_Tile_View_DataList= await horizontal_Tile_View_Data("Incomes" ,PrecictionPageData.getTotalPredictedPerEachCategory);
-  //
-  //   for(int i=0;i<horizontal_Tile_View_DataList.length;i++){
-  //     incomeTotal+= await horizontal_Tile_View_DataList[i].CurrentSum;
-  //     currentIncomeTotal+= await horizontal_Tile_View_DataList[i].TransectionAmount;
-  //   }
-  //
-  //   //EXPENSE
-  //   horizontal_Tile_View_DataList= await [];
-  //   horizontal_Tile_View_DataList= await horizontal_Tile_View_Data("Expense" ,PrecictionPageData.getTotalPredictedPerEachCategory);
-  //
-  //   for(int i=0;i<horizontal_Tile_View_DataList.length;i++){
-  //     expenseTotal+= await horizontal_Tile_View_DataList[i].CurrentSum;
-  //     currentExpenseTotal+= await horizontal_Tile_View_DataList[i].TransectionAmount;
-  //   }
-  //
-  //   for(int i=0;i<BudgetValues.length;i++){
-  //     BudgetAllocated+= await BudgetValues[i].TransectionAmount;
-  //   }
-  //   return 0;
-  // }
 
   @override
   Widget build(BuildContext context) {
     ExpenseTable = OverviewTableExpense();
     IncomeTable = OverviewTableIncome();
-    // SetData();
 
         for(int i=0;i<IncomeTable.length;i++){
       print(IncomeTable[i].TransectionAmount);
@@ -148,10 +73,8 @@ class _NetTotalOverviewState extends State<NetTotalOverview> {
                 0.0, 30 * (1.0 - widget.animation!.value), 0.0),
             child: Container(
                 padding: EdgeInsets.symmetric(horizontal: 13,vertical: 26),
-                // height: MediaQuery.of(context).size.width*TileHeightAllAccounts,
                 width: MediaQuery.of(context).size.width*TileWidthAllAccounts*2+10,
                 decoration: BoxDecoration(
-                  // color: ColourList.OverviewChartBackground,
                     color: Colors.blueGrey.withOpacity(0.02),
                     borderRadius: BorderRadius.all(Radius.circular(20))
                 ),
@@ -170,7 +93,6 @@ class _NetTotalOverviewState extends State<NetTotalOverview> {
                         scrollDirection: Axis.vertical,
                         child: DataTable(
                           columnSpacing: MediaQuery.of(context).size.width*0.09,
-                          // dividerThickness: 2,
                           dataRowHeight: MediaQuery.of(context).size.width*0.10,
                           columns: [
                             DataColumn(label: Flexible(child: Center(child: Text('',style: TextStyle(color: Colors.black.withOpacity(0.5), fontFamily: 'Roboto', fontWeight: FontWeight.w600, fontSize: MediaQuery.of(context).size.width*0.036,),)))),

@@ -1,16 +1,9 @@
 import 'package:flutter/material.dart';
 import '../../../Classes/All Contralling Dart Files/category_types.dart';
 import '../../../Classes/All Contralling Dart Files/FiltersForAccounts.dart';
-import '../../../Classes/All Contralling Dart Files/BudgetsList.dart';
-import '../../../Classes/colors.dart';
-import '../../../Classes/AccountsClass.dart';
 import '../../../Classes/All Contralling Dart Files/TransectionsClass.dart';
-import '../FuturePredictorScreen/VerticleListViewForEachCategoryPrediction/meals_list_data.dart';
 import '../../../Classes/enums.dart';
-import 'package:flutter/material.dart';
-import 'package:syncfusion_flutter_charts/charts.dart';
 import '../../../DataFiles/StackedGraphDataFunction.dart';
-import '../../../Classes/All Contralling Dart Files/FiltersForAccounts.dart';
 import 'package:intl/intl.dart';
 
 //Total Costs per each Category each day as a list
@@ -124,9 +117,6 @@ List <Categories> horizontal_Tile_View_Data(String IncomeOrExpense, PrecictionPa
 List<BubbleChartData> Create_Bubble_Charts_DataList(DateTime starting_date,DateTime ending_date, String IncomeOrExpense,String AccountType){
 
 
-  int todaytuppleIndex=0;
-
-
   List<BubbleChartData> tempchartData = [];
   final differencefromNowToFirstOfNextMonth = DateTime.utc(DateTime.now().year, DateTime.now().month+1, 1). difference(DateTime.now()). inDays+1;
   final difference = FiltersForTheApp.how_many_Days_pastData_To_Be_Considered;
@@ -134,7 +124,6 @@ List<BubbleChartData> Create_Bubble_Charts_DataList(DateTime starting_date,DateT
   for(int dateIndex=difference+differencefromNowToFirstOfNextMonth-1;dateIndex>=0;dateIndex--){
     final date = DateTime.utc(DateTime.now().year, DateTime.now().month+1, 1).subtract(Duration(days: dateIndex));
     final date1=DateFormat('dd/MM/yyyy').format(date);
-    // ChartData temp = ChartData(date1.toString(), [OneSectorDefine("fuck", 60, Colors.red)]);
     List <Categories> Currently_Using_Categories_temp;
     IncomeOrExpense =="Incomes"? Currently_Using_Categories_temp=Currently_Using_Income_Categories : Currently_Using_Categories_temp=Currently_Using_Expense_Categories;
     List <BubbleOneSectorDefine> tempcategoryaddition= [];
@@ -144,15 +133,11 @@ List<BubbleChartData> Create_Bubble_Charts_DataList(DateTime starting_date,DateT
 
       if(categoryIndex<Currently_Using_Categories_temp.length) {
 
-        Categories TempCategry=Currently_Using_Categories_temp[categoryIndex];
-        // TempCategry.TransectionAmount=50;
         tempcategoryaddition.add(BubbleOneSectorDefine(Currently_Using_Categories_temp[categoryIndex].CategoryName, 0, Currently_Using_Categories_temp[categoryIndex].ButtonColor,Currently_Using_Categories_temp[categoryIndex],true));
       }
       else{
         tempcategoryaddition.add(BubbleOneSectorDefine("", 0, Colors.white,Currently_Using_Categories_temp[0],true));
       }
-      // print(tempcategoryaddition[tempcategoryaddition.length-1].Category);
-
 
 
 

@@ -1,21 +1,11 @@
-import 'package:ivorywalletsolution/Classes/All%20Contralling%20Dart%20Files/BudgetsList.dart';
 import 'package:ivorywalletsolution/Classes/All%20Contralling%20Dart%20Files/FiltersForAccounts.dart';
-import '../SettingsForFuturePrediction/fitness_app_theme.dart';
 import 'meals_list_data.dart';
 import 'package:flutter/material.dart';
 import '../../DataGenerators/PredictionDataFIles.dart';
 import '../../../../Classes/All Contralling Dart Files/category_types.dart';
 import '../../../../Classes/enums.dart';
-import '../../DataGenerators/PredictionDataFIles.dart';
-import '../WaterFilledBarIndicator/wave_view.dart';
-import 'package:flutter/material.dart';
 import '../../../../Classes/colors.dart';
-import '../../../../Widgets/category_button.dart';
-import '../../../../Classes/All Contralling Dart Files/category_types.dart';
-import '../../../../Classes/ChartData.dart';
-import '../../../../DataFiles/Budget related/constants.dart';
 import '../../../../Widgets/Charts/Gauge.dart';
-import '../../../../Classes/All Contralling Dart Files/FiltersForAccounts.dart';
 
 class HexColor extends Color {
   HexColor(final String hexColor) : super(_getColorFromHex(hexColor));
@@ -168,7 +158,6 @@ class _GaugesListState extends State<GaugesList> with TickerProviderStateMixin {
                                   color: Colors.transparent,
                                   borderRadius: BorderRadius.all(Radius.circular(20),
                                   ),
-                                  // boxShadow: [kBoxShadow],
                                 ),
                                 child: Stack(
                                   children: [
@@ -259,18 +248,6 @@ class _GaugesListState extends State<GaugesList> with TickerProviderStateMixin {
                                       ),
 
                                     ),
-                                    // Positioned(
-                                    //   top: Width*0.03,
-                                    //   left: Width*0.55,
-                                    //   child: SizedBox(
-                                    //     width: 80,
-                                    //     height: Width*0.5+80,
-                                    //     child: Padding(
-                                    //       padding: const EdgeInsets.all(13),
-                                    //       child: Image.asset(BudgetsList[index].IconAddress,color: BudgetsList[index]!.ButtonColor,),
-                                    //     ),
-                                    //   ),
-                                    // ),
                                   ],
                                 )
 
@@ -292,44 +269,3 @@ class _GaugesListState extends State<GaugesList> with TickerProviderStateMixin {
     );
   }
 }
-
-// class MealsView extends StatelessWidget {
-//   const MealsView(
-//       {Key? key, this.mealsListData, this.animationController, this.animation,required this.IncomeOrExpense})
-//       : super(key: key);
-//
-//   final MealsListData? mealsListData;
-//   final AnimationController? animationController;
-//   final Animation<double>? animation;
-//
-//   final String IncomeOrExpense;
-//
-//   double GetBudgetValue(String CategoryName){
-//     double ReturnVal=0;
-//     for(int i=0;i<BudgetValues.length;i++){
-//       if(CategoryName==BudgetValues[i].CategoryName){
-//         ReturnVal=BudgetValues[i].TransectionAmount;
-//       }
-//     }
-//     return ReturnVal;
-//   }
-//
-//
-//
-//   @override
-//   Widget build(BuildContext context) {
-//     return AnimatedBuilder(
-//       animation: animationController!,
-//       builder: (BuildContext context, Widget? child) {
-//         return FadeTransition(
-//           opacity: animation!,
-//           child: Transform(
-//             transform: Matrix4.translationValues(
-//                 100 * (1.0 - animation!.value), 0.0, 0.0),
-//             child:
-//           ),
-//         );
-//       },
-//     );
-//   }
-// }

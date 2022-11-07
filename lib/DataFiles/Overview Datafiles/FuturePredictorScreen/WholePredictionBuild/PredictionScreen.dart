@@ -1,34 +1,17 @@
 import 'package:intl/intl.dart';
 import '../../FuturePredictorScreen/NetPredictionsWidget/IncomeSummory.dart';
-import '../../FuturePredictorScreen/VerticleListViewForEachCategoryPrediction/Income_and_Expense_Summory.dart';
 import '../NetPredictionsWidget/NetTotalOverview.dart';
 import '../UniqueTitle/UniqeTitle.dart';
 import '../SettingsForFuturePrediction/fitness_app_theme.dart';
 import '../VerticleListViewForEachCategoryPrediction/PieCharts.dart';
 import 'package:flutter/material.dart';
-import '../../../../Widgets/Charts/predictorBubbleChart.dart';
-import 'package:flutter/material.dart';
-import 'package:ivorywalletsolution/Classes/All%20Contralling%20Dart%20Files/TransectionsClass.dart';
 import '../../../../Classes/colors.dart';
 import '../../../../Classes/All Contralling Dart Files/category_types.dart';
-import '../../../../Widgets/four_category_buttons_in_a_row.dart';
-import '../../../../Widgets/curved_bottom_navigation_bar.dart';
 import '../../../../Classes/AccountsClass.dart';
 import '../../../../Classes/All Contralling Dart Files/FiltersForAccounts.dart';
-import 'package:syncfusion_flutter_charts/charts.dart';
 import '../../../../Classes/ChartData.dart';
-import '../../../../Widgets/Charts/dougnutChartForOverview.dart';
-import '../../../../Widgets/Charts/radialBarChartForOverview.dart';
-import '../../../../Widgets/Charts/stackedWeeklyBarChart.dart';
-import '../../../../Widgets/Charts/predictorBubbleChart.dart';
-import 'package:intl/intl.dart';
-import '../../../../DataFiles/Budget related/constants.dart';
 import '../../../../Classes/All Contralling Dart Files/BudgetsList.dart';
 import '../../../../Widgets/Three_gauge_in_a_row.dart';
-import '../../../../Classes/All Contralling Dart Files/FiltersForAccounts.dart';
-// import '../VerticleListViewForEachCategoryPrediction/IncomeSummory.dart';
-import '../NetPredictionsWidget/IncomeSummory.dart';
-import '../VerticleListViewForEachCategoryPrediction/Income_and_Expense_Summory.dart ';
 import '../VerticleListViewForEachCategoryPrediction/GaugesList.dart';
 import '../VerticleListViewForEachCategoryPrediction/StackedBarCharts.dart';
 
@@ -488,14 +471,12 @@ class _MyDiaryScreenState extends State<MyDiaryScreen>
                                                 height: MediaQuery.of(context).size.width *0.09,
                                                 child: Container(
                                                   child: Image.asset("assets/IncomePagePics/all_accounts.png"),
-                                                  // color: Colors.black54.withOpacity(0.1),
 
                                                 ),
                                               ),
                                               SizedBox(width: 10,),
                                               Container(
                                                 width: MediaQuery.of(context).size.height *0.13,
-                                                // height: MediaQuery.of(context).size.height *0.3,
                                                 child: Center(
                                                     child: Text(Value_Selected,style: TextStyle(color: Colors.black),)
                                                 ),
@@ -510,10 +491,8 @@ class _MyDiaryScreenState extends State<MyDiaryScreen>
                                   dropdownColor: Colors.white70,
                                 ),
 
-                                // SizedBox(width: 20,),
 
                                 DropdownButton<String>(
-                                  // dropdownColor: Colors.white54.withOpacity(1.0),
                                   value: dropdownValue,
                                   onChanged: (String? newValue) {
                                     FiltersForTheApp.AccountType = newValue!;
@@ -534,7 +513,6 @@ class _MyDiaryScreenState extends State<MyDiaryScreen>
                                             width: MediaQuery.of(context).size.width *0.35,
                                             height: MediaQuery.of(context).size.width *0.09,
                                             decoration: BoxDecoration(
-                                              // color: Colors.white54.withOpacity(1.0),
                                               borderRadius: BorderRadius.all(Radius.circular(4.0)),
                                             ),
                                           ),
@@ -546,14 +524,12 @@ class _MyDiaryScreenState extends State<MyDiaryScreen>
                                                 height: MediaQuery.of(context).size.width *0.09,
                                                 child: Container(
                                                   child: Image.asset("assets/IncomePagePics/all_accounts.png"),
-                                                  // color: Colors.black54.withOpacity(0.1),
 
                                                 ),
                                               ),
                                               SizedBox(width: 10,),
                                               Container(
                                                 width: MediaQuery.of(context).size.height *0.13,
-                                                // height: MediaQuery.of(context).size.height *0.3,
                                                 child: Center(
                                                     child: Text(Value_Selected,style: TextStyle(color: Colors.black),)
                                                 ),
@@ -661,16 +637,8 @@ class Topic1 extends StatelessWidget {
 
       child: Container(
         width: MediaQuery.of(context).size.width*0.9,
-        height: MediaQuery.of(context).size.width * 0.25,
-        // padding: EdgeInsets.symmetric(vertical: 20,),
-        // margin: EdgeInsets.symmetric(horizontal: MediaQuery.of(context).size.width*0.03,),
-        decoration: BoxDecoration(
+        height: MediaQuery.of(context).size.width * 0.25,decoration: BoxDecoration(
             color: Colors.blueGrey.withOpacity(0.1),
-            // image: DecorationImage(
-            //   fit: BoxFit.cover,
-            //
-            //   image: AssetImage("assets/Budget page/Backgrounds/1.jpg"),
-            // ),
             borderRadius: BorderRadius.all(Radius.circular(20))
         ),
         child: Column(
@@ -725,15 +693,8 @@ class Topic2 extends StatelessWidget {
       child: Container(
         width: MediaQuery.of(context).size.width*0.9,
         height: MediaQuery.of(context).size.width * 0.25,
-        // padding: EdgeInsets.symmetric(vertical: 20,),
-        // margin: EdgeInsets.symmetric(horizontal: MediaQuery.of(context).size.width*0.03,),
         decoration: BoxDecoration(
             color: Colors.blueGrey.withOpacity(0.1),
-            // image: DecorationImage(
-            //   fit: BoxFit.cover,
-            //
-            //   image: AssetImage("assets/Budget page/Backgrounds/1.jpg"),
-            // ),
             borderRadius: BorderRadius.all(Radius.circular(20))
         ),
         child: Column(
@@ -787,15 +748,8 @@ class Topic3 extends StatelessWidget {
       child: Container(
         width: MediaQuery.of(context).size.width*0.9,
         height: MediaQuery.of(context).size.width * 0.25,
-        // padding: EdgeInsets.symmetric(vertical: 20,),
-        // margin: EdgeInsets.symmetric(horizontal: MediaQuery.of(context).size.width*0.03,),
         decoration: BoxDecoration(
             color: Colors.blueGrey.withOpacity(0.1),
-            // image: DecorationImage(
-            //   fit: BoxFit.cover,
-            //
-            //   image: AssetImage("assets/Budget page/Backgrounds/1.jpg"),
-            // ),
             borderRadius: BorderRadius.all(Radius.circular(20))
         ),
         child: Column(
@@ -848,10 +802,8 @@ class Gauges extends StatelessWidget {
         Radius.circular(20),
       ),
       child: Container(
-        // height: MediaQuery.of(context).size.width-20,
         width: MediaQuery.of(context).size.width*0.98,
         padding: EdgeInsets.symmetric(vertical: 10,),
-        // margin: EdgeInsets.symmetric(horizontal: MediaQuery.of(context).size.width*0.015,),
         decoration: BoxDecoration(
             color: ColourList.OverviewChartBackground,
             borderRadius: BorderRadius.all(Radius.circular(20))
@@ -875,7 +827,6 @@ class Gauges extends StatelessWidget {
                       children: [
                         Column(
                           children: [
-                            // SizedBox(height: 10,),
                             ThreeGaugesInARow(MediaQuery.of(context).size.width*0.30,MediaQuery.of(context).size.width*0.51,ExpenseFilteredCategoryValuesForGauges(Currently_Using_Expense_Categories),BudgetValues,0),
                             SizedBox(height: 10,),
                             ThreeGaugesInARow(MediaQuery.of(context).size.width*0.30,MediaQuery.of(context).size.width*0.51,ExpenseFilteredCategoryValuesForGauges(Currently_Using_Expense_Categories),BudgetValues,1),

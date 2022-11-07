@@ -7,7 +7,6 @@ import '../VerticleListViewForEachCategoryPrediction/meals_list_data.dart';
 import '../../DataGenerators/PredictionDataFIles.dart';
 import '../../../../Classes/All Contralling Dart Files/category_types.dart';
 import '../../../../Classes/enums.dart';
-import '../VerticleListViewForEachCategoryPrediction/PieCharts.dart';
 
 class HexColor extends Color {
   HexColor(final String hexColor) : super(_getColorFromHex(hexColor));
@@ -58,24 +57,6 @@ class _MediterranesnDietViewState extends State<MediterranesnDietView> {
 
   }
 
-  // MealsListData SetListItems(Categories InputCategory) {
-  //   MealsListData temp = MealsListData(
-  //     imagePath: InputCategory.IconAddress,
-  //     titleTxt: InputCategory.CategoryName,
-  //     kacl: InputCategory.CurrentSum.toDouble(),
-  //     meals: <String>[
-  //       InputCategory.CategoryType,
-  //       "Current sum : ",
-  //       "    ${InputCategory.TransectionAmount}"
-  //
-  //     ],
-  //     startColor: InputCategory.ButtonColor,
-  //     endColor: InputCategory.EndColor,
-  //   );
-  //
-  //   return temp;
-  // }
-
   double incomeTotal=0;
 
   double expenseTotal=0;
@@ -123,9 +104,6 @@ class _MediterranesnDietViewState extends State<MediterranesnDietView> {
 
   @override
   Widget build(BuildContext context) {
-
-    // SetData();
-
 
 
     return AnimatedBuilder(
@@ -546,19 +524,6 @@ class _MediterranesnDietViewState extends State<MediterranesnDietView> {
                                               // color: FitnessAppTheme.grey.withOpacity(0.5),
                                             ),
                                           ),
-                                          // Text(
-                                          //   'Compared to total budget',
-                                          //   textAlign: TextAlign.center,
-                                          //   style: TextStyle(
-                                          //     fontFamily:
-                                          //     FitnessAppTheme.fontName,
-                                          //     fontWeight: FontWeight.bold,
-                                          //     fontSize: 10,
-                                          //     letterSpacing: 0.0,
-                                          //     color: FitnessAppTheme.grey
-                                          //         .withOpacity(0.5),
-                                          //   ),
-                                          // ),
                                         ],
                                       ),
                                     ),

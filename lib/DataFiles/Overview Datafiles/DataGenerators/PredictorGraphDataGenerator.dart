@@ -1,16 +1,9 @@
 import 'package:flutter/material.dart';
 import '../../../Classes/All Contralling Dart Files/category_types.dart';
 import '../../../Classes/All Contralling Dart Files/FiltersForAccounts.dart';
-import '../../../Classes/All Contralling Dart Files/BudgetsList.dart';
-import '../../../Classes/colors.dart';
-import '../../../Classes/AccountsClass.dart';
 import '../../../Classes/All Contralling Dart Files/TransectionsClass.dart';
-import '../FuturePredictorScreen/VerticleListViewForEachCategoryPrediction/meals_list_data.dart';
 import '../../../Classes/enums.dart';
-import 'package:flutter/material.dart';
-import 'package:syncfusion_flutter_charts/charts.dart';
 import '../../../DataFiles/StackedGraphDataFunction.dart';
-import '../../../Classes/All Contralling Dart Files/FiltersForAccounts.dart';
 import 'package:intl/intl.dart';
 
 //Total Costs per each Category each day as a list

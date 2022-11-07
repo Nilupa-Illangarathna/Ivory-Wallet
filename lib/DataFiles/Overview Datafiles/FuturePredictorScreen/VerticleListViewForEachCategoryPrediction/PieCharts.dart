@@ -1,35 +1,11 @@
 import '../../FuturePredictorScreen/WholePredictionBuild/PredictionScreen.dart';
-import 'package:ivorywalletsolution/Classes/All%20Contralling%20Dart%20Files/BudgetsList.dart';
 import 'package:ivorywalletsolution/Classes/All%20Contralling%20Dart%20Files/FiltersForAccounts.dart';
-import '../SettingsForFuturePrediction/fitness_app_theme.dart';
 import 'meals_list_data.dart';
 import 'package:flutter/material.dart';
-import '../../DataGenerators/PredictionDataFIles.dart';
 import '../../../../Classes/All Contralling Dart Files/category_types.dart';
-import '../../../../Classes/enums.dart';
-import '../../DataGenerators/PredictionDataFIles.dart';
-import '../WaterFilledBarIndicator/wave_view.dart';
 import '../../../../Widgets/Charts/dougnutChartForOverview.dart';
-import 'package:flutter/material.dart';
 import 'package:ivorywalletsolution/Classes/All%20Contralling%20Dart%20Files/TransectionsClass.dart';
-import '../../../../Classes/colors.dart';
-import '../../../../Classes/All Contralling Dart Files/category_types.dart';
-import '../../../../Widgets/four_category_buttons_in_a_row.dart';
-import '../../../../Widgets/curved_bottom_navigation_bar.dart';
-import '../../../../Classes/AccountsClass.dart';
-import '../../../../Classes/All Contralling Dart Files/FiltersForAccounts.dart';
-import 'package:syncfusion_flutter_charts/charts.dart';
 import '../../../../Classes/ChartData.dart';
-import '../../../../Widgets/Charts/dougnutChartForOverview.dart';
-import '../../../../Widgets/Charts/radialBarChartForOverview.dart';
-import '../../../../Widgets/Charts/stackedWeeklyBarChart.dart';
-import '../../../../Widgets/Charts/predictorBubbleChart.dart';
-import 'package:intl/intl.dart';
-import '../../../../DataFiles/Budget related/constants.dart';
-import '../../../../Classes/All Contralling Dart Files/BudgetsList.dart';
-import '../../../../Widgets/Three_gauge_in_a_row.dart';
-import '../../../../Classes/All Contralling Dart Files/FiltersForAccounts.dart';
-
 
 class HexColor extends Color {
   HexColor(final String hexColor) : super(_getColorFromHex(hexColor));
@@ -105,9 +81,6 @@ class _PieChartSetState extends State<PieChartSet> with TickerProviderStateMixin
   @override
   Widget build(BuildContext context) {
 
-
-    // IncomeOrExpense=="Both"? 2:1
-
     IncomeOrExpense=="Both"? ChartSet=["Incomes","Expenses"]: (IncomeOrExpense=="Incomes"? ChartSet=["Incomes"]:ChartSet=["Expenses"] );
     IncomeOrExpense=="Both"? ChartData=[IncomePiechartData,ExpensePiechartData]: (IncomeOrExpense=="Incomes"? ChartData=[IncomePiechartData]:ChartData=[ExpensePiechartData] );
 
@@ -172,12 +145,6 @@ class _PieChartSetState extends State<PieChartSet> with TickerProviderStateMixin
                       },
                     );
 
-                      // MealsView(
-                      // mealsListData: mealsListData[index],
-                      // animation: animation,
-                      // animationController: animationController!,
-                      // IncomeOrExpense: IncomeOrExpense,
-                    // );
                   },
                 ),
               ),

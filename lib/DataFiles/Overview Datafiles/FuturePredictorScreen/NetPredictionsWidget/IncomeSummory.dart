@@ -1,39 +1,11 @@
 import '../../../../Classes/All Contralling Dart Files/BudgetsList.dart';
-import '../SettingsForFuturePrediction/fitness_app_theme.dart';
 import 'package:flutter/material.dart';
 import 'dart:math' as math;
 import 'package:ivorywalletsolution/Classes/All%20Contralling%20Dart%20Files/FiltersForAccounts.dart';
-import '../VerticleListViewForEachCategoryPrediction/meals_list_data.dart';
-import '../../DataGenerators/PredictionDataFIles.dart';
 import '../../../../Classes/All Contralling Dart Files/category_types.dart';
-import '../../../../Classes/enums.dart';
-import '../VerticleListViewForEachCategoryPrediction/PieCharts.dart';
 import 'package:intl/intl.dart';
-import 'NetTotalOverview.dart';
-import '../UniqueTitle/UniqeTitle.dart';
-import '../SettingsForFuturePrediction/fitness_app_theme.dart';
-import '../VerticleListViewForEachCategoryPrediction/PieCharts.dart';
-import 'package:flutter/material.dart';
-import '../../../../Widgets/Charts/predictorBubbleChart.dart';
-import 'package:flutter/material.dart';
-import 'package:ivorywalletsolution/Classes/All%20Contralling%20Dart%20Files/TransectionsClass.dart';
-import '../../../../Classes/colors.dart';
-import '../../../../Classes/All Contralling Dart Files/category_types.dart';
-import '../../../../Widgets/four_category_buttons_in_a_row.dart';
-import '../../../../Widgets/curved_bottom_navigation_bar.dart';
-import '../../../../Classes/AccountsClass.dart';
-import '../../../../Classes/All Contralling Dart Files/FiltersForAccounts.dart';
-import 'package:syncfusion_flutter_charts/charts.dart';
 import '../../../../Classes/ChartData.dart';
-import '../../../../Widgets/Charts/dougnutChartForOverview.dart';
-import '../../../../Widgets/Charts/radialBarChartForOverview.dart';
-import '../../../../Widgets/Charts/stackedWeeklyBarChart.dart';
-import '../../../../Widgets/Charts/predictorBubbleChart.dart';
-import 'package:intl/intl.dart';
-import '../../../../DataFiles/Budget related/constants.dart';
-import '../../../../Classes/All Contralling Dart Files/BudgetsList.dart';
 import '../../../../Widgets/Three_gauge_in_a_row.dart';
-import '../../../../Classes/All Contralling Dart Files/FiltersForAccounts.dart';
 
 class HexColor extends Color {
   HexColor(final String hexColor) : super(_getColorFromHex(hexColor));
@@ -279,15 +251,8 @@ class Topic1 extends StatelessWidget {
       child: Container(
         width: MediaQuery.of(context).size.width*0.9,
         height: MediaQuery.of(context).size.width * 0.25,
-        // padding: EdgeInsets.symmetric(vertical: 20,),
-        // margin: EdgeInsets.symmetric(horizontal: MediaQuery.of(context).size.width*0.03,),
         decoration: BoxDecoration(
             color: Colors.blueGrey.withOpacity(0.1),
-            // image: DecorationImage(
-            //   fit: BoxFit.cover,
-            //
-            //   image: AssetImage("assets/Budget page/Backgrounds/1.jpg"),
-            // ),
             borderRadius: BorderRadius.all(Radius.circular(20))
         ),
         child: Column(
@@ -342,10 +307,8 @@ class ExpenseandIncomeTableSTL extends StatelessWidget {
       padding: const EdgeInsets.all(8.0),
       child: Container(
           padding: EdgeInsets.symmetric(horizontal: 13,vertical: 26),
-          // height: MediaQuery.of(context).size.width*TileHeightAllAccounts,
           width: MediaQuery.of(context).size.width*TileWidthAllAccounts*2+10,
           decoration: BoxDecoration(
-            // color: ColourList.OverviewChartBackground,
               color: Colors.blueGrey.withOpacity(0.1),
               borderRadius: BorderRadius.all(Radius.circular(20))
           ),
@@ -359,7 +322,6 @@ class ExpenseandIncomeTableSTL extends StatelessWidget {
                 scrollDirection: Axis.vertical,
                 child: DataTable(
                   columnSpacing: MediaQuery.of(context).size.width*0.05,
-                  // dividerThickness: 2,
                   dataRowHeight: MediaQuery.of(context).size.width*0.08,
                   columns: [
                     DataColumn(label: Flexible(child: Center(child: Text('Category',style: TextStyle(color: Colors.black.withOpacity(0.5), fontFamily: 'Roboto', fontWeight: FontWeight.w600, fontSize: MediaQuery.of(context).size.width*0.032,),)))),
@@ -411,15 +373,8 @@ class Topic2 extends StatelessWidget {
       child: Container(
         width: MediaQuery.of(context).size.width*0.9,
         height: MediaQuery.of(context).size.width * 0.25,
-        // padding: EdgeInsets.symmetric(vertical: 20,),
-        // margin: EdgeInsets.symmetric(horizontal: MediaQuery.of(context).size.width*0.03,),
         decoration: BoxDecoration(
             color: Colors.blueGrey.withOpacity(0.1),
-            // image: DecorationImage(
-            //   fit: BoxFit.cover,
-            //
-            //   image: AssetImage("assets/Budget page/Backgrounds/1.jpg"),
-            // ),
             borderRadius: BorderRadius.all(Radius.circular(20))
         ),
         child: Column(
@@ -473,15 +428,8 @@ class Topic3 extends StatelessWidget {
       child: Container(
         width: MediaQuery.of(context).size.width*0.9,
         height: MediaQuery.of(context).size.width * 0.25,
-        // padding: EdgeInsets.symmetric(vertical: 20,),
-        // margin: EdgeInsets.symmetric(horizontal: MediaQuery.of(context).size.width*0.03,),
         decoration: BoxDecoration(
             color: Colors.blueGrey.withOpacity(0.1),
-            // image: DecorationImage(
-            //   fit: BoxFit.cover,
-            //
-            //   image: AssetImage("assets/Budget page/Backgrounds/1.jpg"),
-            // ),
             borderRadius: BorderRadius.all(Radius.circular(20))
         ),
         child: Column(
@@ -534,10 +482,8 @@ class Gauges extends StatelessWidget {
         Radius.circular(20),
       ),
       child: Container(
-        // height: MediaQuery.of(context).size.width-20,
         width: MediaQuery.of(context).size.width*0.98,
         padding: EdgeInsets.symmetric(vertical: 10,),
-        // margin: EdgeInsets.symmetric(horizontal: MediaQuery.of(context).size.width*0.015,),
         decoration: BoxDecoration(
             color: ColourList.OverviewChartBackground,
             borderRadius: BorderRadius.all(Radius.circular(20))
@@ -561,7 +507,6 @@ class Gauges extends StatelessWidget {
                       children: [
                         Column(
                           children: [
-                            // SizedBox(height: 10,),
                             ThreeGaugesInARow(MediaQuery.of(context).size.width*0.30,MediaQuery.of(context).size.width*0.51,ExpenseFilteredCategoryValuesForGauges(Currently_Using_Expense_Categories),BudgetValues,0),
                             SizedBox(height: 10,),
                             ThreeGaugesInARow(MediaQuery.of(context).size.width*0.30,MediaQuery.of(context).size.width*0.51,ExpenseFilteredCategoryValuesForGauges(Currently_Using_Expense_Categories),BudgetValues,1),
@@ -607,10 +552,8 @@ class NetTodayandMonth extends StatelessWidget {
       borderRadius: BorderRadius.all(Radius.circular(20)),
       child: Container(
           padding: EdgeInsets.symmetric(horizontal: 13,vertical: 26),
-          // height: MediaQuery.of(context).size.width*TileHeightAllAccounts,
           width: MediaQuery.of(context).size.width*TileWidthAllAccounts*2+10,
           decoration: BoxDecoration(
-            // color: ColourList.OverviewChartBackground,
               color: Colors.blueGrey.withOpacity(0.02),
               borderRadius: BorderRadius.all(Radius.circular(20))
           ),
@@ -629,7 +572,6 @@ class NetTodayandMonth extends StatelessWidget {
                   scrollDirection: Axis.vertical,
                   child: DataTable(
                     columnSpacing: MediaQuery.of(context).size.width*0.09,
-                    // dividerThickness: 2,
                     dataRowHeight: MediaQuery.of(context).size.width*0.10,
                     columns: [
                       DataColumn(label: Flexible(child: Center(child: Text('',style: TextStyle(color: Colors.black.withOpacity(0.5), fontFamily: 'Roboto', fontWeight: FontWeight.w600, fontSize: MediaQuery.of(context).size.width*0.036,),)))),
