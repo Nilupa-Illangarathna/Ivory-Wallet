@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import './Classes/colors.dart';
 import 'Pages/IncomesPage.dart';
 import 'Pages/ExpensesPage.dart';
-import 'Pages/OverviewPage.dart';
 import 'Pages/Transections.dart';
 import 'Pages/Budget.dart';
 import 'package:flutter/services.dart';
