@@ -11,7 +11,6 @@ class BudgetsDatabase{
   BudgetsDatabase._init();
 
   Future<Database> get database async{
-    // if(_database!=null) return _database!;
 
     _database = await _initDB('Budgets.db');
     return _database!;
@@ -80,8 +79,6 @@ class BudgetsDatabase{
     final db = await instance.database;
 
     final orderBy = '${NoteFields.ID} ASC';
-    // final result =
-    //     await db.rawQuery('SELECT * FROM $tableNotes ORDER BY $orderBy');
 
     final result = await db.query(tablename, orderBy: orderBy);
 
