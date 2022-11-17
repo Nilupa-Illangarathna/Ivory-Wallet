@@ -12,19 +12,17 @@
 #### consists a lot of functions heer such as contacting the developer, review, fedback etc.
 ![Screenshot_20221117-143705](https://user-images.githubusercontent.com/95247831/202404558-88f0cd2e-20bc-42d9-bcb4-b5ae3f9844a4.jpg)
 ### Expense screen
-![Screenshot_20221117-143705](https://user-images.githubusercontent.com/95247831/202404591-f9ce0491-7b4c-4eb5-ada1-63b13a667c8f.jpg)
-### Income screen
 ![Screenshot_20221117-143817](https://user-images.githubusercontent.com/95247831/202404619-90a20e87-9c9e-42f6-9749-dc21b60e30a2.jpg)
-### Transaction screen
+### Income screen
 ![Screenshot_20221117-143814](https://user-images.githubusercontent.com/95247831/202404627-899c4520-f4e9-4af1-9f92-40207104ff64.jpg)
+### Transaction screen
 ![Screenshot_20221117-143836](https://user-images.githubusercontent.com/95247831/202404651-fbdb6459-aafd-4511-872a-cdf23bfcd709.jpg)
-### Overview screen
 ![Screenshot_20221117-143840](https://user-images.githubusercontent.com/95247831/202404676-99b178a4-d04d-4653-9451-e53172a789c1.jpg)
+### Overview screen
 ![Screenshot_20221117-143753](https://user-images.githubusercontent.com/95247831/202404711-1ef062f1-e6d5-4b37-b3b9-9a282a63b6b5.jpg)
 ![Screenshot_20221117-143759](https://user-images.githubusercontent.com/95247831/202404739-5d1a15f6-01c1-402e-9735-7dea9b252028.jpg)
-### Budget setter screen
 ![Screenshot_20221117-143805](https://user-images.githubusercontent.com/95247831/202404742-df59e3e7-cb5b-4581-af7b-27ed9a1b77e8.jpg)
-
+### Budget setter screen
 ![Screenshot_20221117-143810](https://user-images.githubusercontent.com/95247831/202404908-3e44a6cb-c601-4050-b8fd-fcc9ede73171.jpg)
 
 ![Screenshot_20221117-143824](https://user-images.githubusercontent.com/95247831/202404933-7759bf6e-0e3f-4266-ac3c-fe4b20861bdf.jpg)
