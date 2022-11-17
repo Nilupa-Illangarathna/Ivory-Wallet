@@ -9,7 +9,7 @@
 ### Homescreen
 ![Screenshot_20221117-143703](https://user-images.githubusercontent.com/95247831/202404530-e655fd9f-e8af-458d-933a-953f9951839b.jpg)
 ### App drawer
-####consists a lot of functions heer such as contacting the developer, review, fedback etc.
+#### consists a lot of functions heer such as contacting the developer, review, fedback etc.
 ![Screenshot_20221117-143705](https://user-images.githubusercontent.com/95247831/202404558-88f0cd2e-20bc-42d9-bcb4-b5ae3f9844a4.jpg)
 ### Expense screen
 ![Screenshot_20221117-143705](https://user-images.githubusercontent.com/95247831/202404591-f9ce0491-7b4c-4eb5-ada1-63b13a667c8f.jpg)
