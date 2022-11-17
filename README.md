@@ -24,11 +24,10 @@
 ![Screenshot_20221117-143805](https://user-images.githubusercontent.com/95247831/202404742-df59e3e7-cb5b-4581-af7b-27ed9a1b77e8.jpg)
 ### Budget setter screen
 ![Screenshot_20221117-143810](https://user-images.githubusercontent.com/95247831/202404908-3e44a6cb-c601-4050-b8fd-fcc9ede73171.jpg)
-
+### Future predictor screen
 ![Screenshot_20221117-143824](https://user-images.githubusercontent.com/95247831/202404933-7759bf6e-0e3f-4266-ac3c-fe4b20861bdf.jpg)
 ![Screenshot_20221117-143831](https://user-images.githubusercontent.com/95247831/202404956-45f2e2f0-713c-4c33-bd26-a63d96fe8815.jpg)
-
-
+### Settings screen
 ![Screenshot_20221117-143709](https://user-images.githubusercontent.com/95247831/202404883-08342dc9-d071-4fdd-9437-a6fe033e7e20.jpg)
 
 
