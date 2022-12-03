@@ -1,13 +1,15 @@
 # ivorywalletsolution
 
 ## Contents
-### 1. Screenshots of screens
-### 2. Screen Recordings of the app
-### 3. Report about the app
+### 1. Report about the app
+### 2. Screenshots of screens
+### 3. Screen Recordings of the app
  
+# 1. All the data related to this project can be found inside the following pdf
 
+[19_ENG_033_Final_Report.pdf](https://github.com/Nilupa-Illangarathna/Ivory-Wallet/files/10029657/19_ENG_033_Final_Report.pdf)
 
-# 1. Screenshots of screens
+# 2. Screenshots of screens
 <table>
   <tr>
     <td> Helper screen</td>
@@ -83,7 +85,7 @@
   </tr>
  </table>
 
-# 2. Screen Recordings of the app
+# 3. Screen Recordings of the app
 
 
 https://user-images.githubusercontent.com/95247831/205420459-6ec970a3-126c-489c-a154-95e4eed75975.mp4
@@ -104,6 +106,4 @@ https://user-images.githubusercontent.com/95247831/205420497-1c9ac8ee-9c04-43ce-
 
 https://user-images.githubusercontent.com/95247831/205420507-864d5b28-2465-4e82-86b3-3044d93d6d5c.mp4
 
-# 3. All the data related to this project can be found inside the following pdf
 
-[19_ENG_033_Final_Report.pdf](https://github.com/Nilupa-Illangarathna/Ivory-Wallet/files/10029657/19_ENG_033_Final_Report.pdf)
