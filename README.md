@@ -83,8 +83,22 @@
   </tr>
  </table>
 
-# 2. 
-https://user-images.githubusercontent.com/95247831/205419969-92717950-216b-4765-a983-1ed4f8fb5dae.mp4
+# 2. Screen Recordings of the app
+
+<table>
+  <tr>
+    <td> Authentication</td>
+     <td> Overview screen</td>
+     <td> Overview screen</td>
+  </tr>
+  <tr>
+    <td><img src="https://user-images.githubusercontent.com/95247831/205419969-92717950-216b-4765-a983-1ed4f8fb5dae.mp4" width=300></td>
+    <td><img src="https://user-images.githubusercontent.com/95247831/202404739-5d1a15f6-01c1-402e-9735-7dea9b252028.jpg" width=300></td>
+    <td><img src="https://user-images.githubusercontent.com/95247831/202404742-df59e3e7-cb5b-4581-af7b-27ed9a1b77e8.jpg" width=300></td>
+  </tr>
+ </table>
+
+
 
 # 3. All the data related to this project can be found inside the following pdf
 
