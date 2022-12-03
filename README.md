@@ -35,9 +35,9 @@
 
 <table>
   <tr>
-    <td>First Screen Page</td>
-     <td>Holiday Mention</td>
-     <td>Present day in purple and selected day in pink</td>
+    <td> Overview screen</td>
+     <td> Overview screen</td>
+     <td> Overview screen</td>
   </tr>
   <tr>
     <td><img src="https://user-images.githubusercontent.com/95247831/202404711-1ef062f1-e6d5-4b37-b3b9-9a282a63b6b5.jpg" width=300></td>
