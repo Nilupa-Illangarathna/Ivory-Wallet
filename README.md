@@ -5,11 +5,11 @@
 ### 2. Screen Recordings of the app
 ### 3. Report about the app
  
-## All the data related to this project can be found inside the following pdf
+<!-- ## All the data related to this project can be found inside the following pdf
 
-[19_ENG_033_Final_Report.pdf](https://github.com/Nilupa-Illangarathna/Ivory-Wallet/files/10029657/19_ENG_033_Final_Report.pdf)
+[19_ENG_033_Final_Report.pdf](https://github.com/Nilupa-Illangarathna/Ivory-Wallet/files/10029657/19_ENG_033_Final_Report.pdf) -->
 
-# 1.
+# 1. Screenshots of screens
 <table>
   <tr>
     <td> Helper screen</td>
@@ -84,5 +84,19 @@
 
   </tr>
  </table>
+
+
+
+<table>
+  <tr>
+    <td> Future predictor screen</td>
+
+  </tr>
+  <tr>
+    <td><img src="[https://user-images.githubusercontent.com/95247831/202404933-7759bf6e-0e3f-4266-ac3c-fe4b20861bdf.jpg](https://github.com/Nilupa-Illangarathna/Ivory-Wallet/files/10029657/19_ENG_033_Final_Report.pdf)" width=300></td>
+
+  </tr>
+ </table>
+
 
 
