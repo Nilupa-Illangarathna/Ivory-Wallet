@@ -40,9 +40,9 @@
      <td>Present day in purple and selected day in pink</td>
   </tr>
   <tr>
-    <td><img src="https://user-images.githubusercontent.com/95247831/202404711-1ef062f1-e6d5-4b37-b3b9-9a282a63b6b5.jpg" width=270 height=480></td>
-    <td><img src="https://user-images.githubusercontent.com/95247831/202404739-5d1a15f6-01c1-402e-9735-7dea9b252028.jpg" width=270 height=480></td>
-    <td><img src="[screenshots/Screenshot_1582745139.png](https://user-images.githubusercontent.com/95247831/202404742-df59e3e7-cb5b-4581-af7b-27ed9a1b77e8.jpg)" width=270 height=480></td>
+    <td><img src="https://user-images.githubusercontent.com/95247831/202404711-1ef062f1-e6d5-4b37-b3b9-9a282a63b6b5.jpg" width=300></td>
+    <td><img src="https://user-images.githubusercontent.com/95247831/202404739-5d1a15f6-01c1-402e-9735-7dea9b252028.jpg" width=300></td>
+    <td><img src="https://user-images.githubusercontent.com/95247831/202404742-df59e3e7-cb5b-4581-af7b-27ed9a1b77e8.jpg" width=300></td>
   </tr>
  </table>
 
