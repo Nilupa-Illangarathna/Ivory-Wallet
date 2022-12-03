@@ -72,9 +72,17 @@
 
 
 
+<table>
+  <tr>
+    <td> Future predictor screen</td>
+     <td> Future predictor screen</td>
 
-### Future predictor screen
-<img src="https://user-images.githubusercontent.com/95247831/202404933-7759bf6e-0e3f-4266-ac3c-fe4b20861bdf.jpg" width= 300>
-<img src="[https://user-images.githubusercontent.com/95247831/202404483-0999cac6-2d80-4e38-914a-b109d3400336.jpg](https://user-images.githubusercontent.com/95247831/202404956-45f2e2f0-713c-4c33-bd26-a63d96fe8815.jpg)" width= 300>
+  </tr>
+  <tr>
+    <td><img src="https://user-images.githubusercontent.com/95247831/202404933-7759bf6e-0e3f-4266-ac3c-fe4b20861bdf.jpg" width=300></td>
+    <td><img src="https://user-images.githubusercontent.com/95247831/202404483-0999cac6-2d80-4e38-914a-b109d3400336.jpg" width=300></td>
+
+  </tr>
+ </table>
 
 
