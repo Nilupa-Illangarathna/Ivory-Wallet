@@ -80,7 +80,7 @@
   </tr>
   <tr>
     <td><img src="https://user-images.githubusercontent.com/95247831/202404933-7759bf6e-0e3f-4266-ac3c-fe4b20861bdf.jpg" width=300></td>
-    <td><img src="https://user-images.githubusercontent.com/95247831/202404483-0999cac6-2d80-4e38-914a-b109d3400336.jpg" width=300></td>
+    <td><img src="" width=300></td>
 
   </tr>
  </table>
