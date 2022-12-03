@@ -1,8 +1,9 @@
 # ivorywalletsolution
 
 ## Contents
-### Screenshots of screens
-### 
+### 1. Screenshots of screens
+### 2. Screen Recordings of the app
+### 3. Report about the app
  
 ## All the data related to this project can be found inside the following pdf
 
