@@ -3,6 +3,7 @@
 ## All the data related to this project can be found inside the following pdf
 
 [19_ENG_033_Final_Report.pdf](https://github.com/Nilupa-Illangarathna/Ivory-Wallet/files/10029657/19_ENG_033_Final_Report.pdf)
+<img src="https://user-images.githubusercontent.com/95247831/202404483-0999cac6-2d80-4e38-914a-b109d3400336.jpg" width= 100 height =100>
 
 ### Helper screen
 ![Screenshot_20221117-143713](https://user-images.githubusercontent.com/95247831/202404483-0999cac6-2d80-4e38-914a-b109d3400336.jpg)
