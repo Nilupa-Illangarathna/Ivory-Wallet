@@ -9,51 +9,7 @@
 
 [19_ENG_033_Final_Report.pdf](https://github.com/Nilupa-Illangarathna/Ivory-Wallet/files/10029657/19_ENG_033_Final_Report.pdf)
 
-# 2. Screenshots of screens
-<table>
-  <tr>
-    <td> Helper screen</td>
-     <td> Homescreen</td>
-     <td> App drawer</td>
-  </tr>
-  <tr>
-    <td><img src="https://user-images.githubusercontent.com/95247831/202404483-0999cac6-2d80-4e38-914a-b109d3400336.jpg" width=300></td>
-    <td><img src="https://user-images.githubusercontent.com/95247831/202404530-e655fd9f-e8af-458d-933a-953f9951839b.jpg" width=300></td>
-    <td><img src="https://user-images.githubusercontent.com/95247831/202404558-88f0cd2e-20bc-42d9-bcb4-b5ae3f9844a4.jpg" width=300></td>
-  </tr>
- </table>
 
-
-<table>
-  <tr>
-    <td> Expense screen</td>
-     <td> Income screen</td>
-     <td> Budget setter screen</td>
-  </tr>
-  <tr>
-    <td><img src="https://user-images.githubusercontent.com/95247831/202404619-90a20e87-9c9e-42f6-9749-dc21b60e30a2.jpg" width=300></td>
-    <td><img src="https://user-images.githubusercontent.com/95247831/202404483-0999cac6-2d80-4e38-914a-b109d3400336.jpg" width=300></td>
-    <td><img src="https://user-images.githubusercontent.com/95247831/202404908-3e44a6cb-c601-4050-b8fd-fcc9ede73171.jpg" width=300></td>
-  </tr>
- </table>
-
-
-### Settings screen
-<img src="[https://user-images.githubusercontent.com/95247831/202404483-0999cac6-2d80-4e38-914a-b109d3400336.jpg](https://user-images.githubusercontent.com/95247831/202404883-08342dc9-d071-4fdd-9437-a6fe033e7e20.jpg)" width= 300>
-<!-- ![Screenshot_20221117-143709](https://user-images.githubusercontent.com/95247831/202404883-08342dc9-d071-4fdd-9437-a6fe033e7e20.jpg) --> -->
-
-<table>
-  <tr>
-    <td> Transaction screen</td>
-     <td> Transaction screen</td>
-     <td> Settings screen</td>
-  </tr>
-  <tr>
-    <td><img src="https://user-images.githubusercontent.com/95247831/202404651-fbdb6459-aafd-4511-872a-cdf23bfcd709.jpg" width=300></td>
-    <td><img src="https://user-images.githubusercontent.com/95247831/202404676-99b178a4-d04d-4653-9451-e53172a789c1.jpg" width=300></td>
-    <td><img src="https://user-images.githubusercontent.com/95247831/202404483-0999cac6-2d80-4e38-914a-b109d3400336.jpg" width=300></td>
-  </tr>
- </table>
 
 ### Overview screen
 
@@ -238,7 +194,51 @@ Before development, a case study revealed similar apps in the Play Store, such a
 
 The Ivory Wallet's prediction model utilizes K-means clustering, frequency considerations, statistics, and interpolation. This model, discussed in the Related Works section, predicts future expenses based on past transactions while addressing potential challenges related to large one-time payments.
 
----
+# 2. Screenshots of screens
+<table>
+  <tr>
+    <td> Helper screen</td>
+     <td> Homescreen</td>
+     <td> App drawer</td>
+  </tr>
+  <tr>
+    <td><img src="https://user-images.githubusercontent.com/95247831/202404483-0999cac6-2d80-4e38-914a-b109d3400336.jpg" width=300></td>
+    <td><img src="https://user-images.githubusercontent.com/95247831/202404530-e655fd9f-e8af-458d-933a-953f9951839b.jpg" width=300></td>
+    <td><img src="https://user-images.githubusercontent.com/95247831/202404558-88f0cd2e-20bc-42d9-bcb4-b5ae3f9844a4.jpg" width=300></td>
+  </tr>
+ </table>
+
+
+<table>
+  <tr>
+    <td> Expense screen</td>
+     <td> Income screen</td>
+     <td> Budget setter screen</td>
+  </tr>
+  <tr>
+    <td><img src="https://user-images.githubusercontent.com/95247831/202404619-90a20e87-9c9e-42f6-9749-dc21b60e30a2.jpg" width=300></td>
+    <td><img src="https://user-images.githubusercontent.com/95247831/202404483-0999cac6-2d80-4e38-914a-b109d3400336.jpg" width=300></td>
+    <td><img src="https://user-images.githubusercontent.com/95247831/202404908-3e44a6cb-c601-4050-b8fd-fcc9ede73171.jpg" width=300></td>
+  </tr>
+ </table>
+
+
+### Settings screen
+<img src="[https://user-images.githubusercontent.com/95247831/202404483-0999cac6-2d80-4e38-914a-b109d3400336.jpg](https://user-images.githubusercontent.com/95247831/202404883-08342dc9-d071-4fdd-9437-a6fe033e7e20.jpg)" width= 300>
+<!-- ![Screenshot_20221117-143709](https://user-images.githubusercontent.com/95247831/202404883-08342dc9-d071-4fdd-9437-a6fe033e7e20.jpg) --> -->
+
+<table>
+  <tr>
+    <td> Transaction screen</td>
+     <td> Transaction screen</td>
+     <td> Settings screen</td>
+  </tr>
+  <tr>
+    <td><img src="https://user-images.githubusercontent.com/95247831/202404651-fbdb6459-aafd-4511-872a-cdf23bfcd709.jpg" width=300></td>
+    <td><img src="https://user-images.githubusercontent.com/95247831/202404676-99b178a4-d04d-4653-9451-e53172a789c1.jpg" width=300></td>
+    <td><img src="https://user-images.githubusercontent.com/95247831/202404483-0999cac6-2d80-4e38-914a-b109d3400336.jpg" width=300></td>
+  </tr>
+ </table>
 
 ## 3. Methodology
 
@@ -298,9 +298,6 @@ Several experiments were conducted on the prediction model, considering differen
 
 The first build of the Ivory Wallet includes essential features such as helper screens, authentication, transaction addition, category management, voice typing, editing, deleting, and sharing transactions, and budget setting. An overview section provides insights into daily, budget, and weekly summaries, along with predictions categorized by expense type. Additional features include dark theme support and customization options.
 
-### 4.3 Screenshots of Each Screen
-
-[Insert screenshots of authentication, income, and expense screen, transaction screen, helper screen, budget setter, future predictor, overview screen, settings, and icon selector.]
 
 ### 4.4 Screens Related to Deployment
 
