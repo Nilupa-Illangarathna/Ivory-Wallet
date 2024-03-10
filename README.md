@@ -39,6 +39,18 @@ https://user-images.githubusercontent.com/95247831/205420507-864d5b28-2465-4e82-
 
 
 
+<table>
+  <tr>
+    <td> Recording 01</td>
+     <td> Recording 02</td>
+     <td> Recording 03</td>
+  </tr>
+  <tr>
+    <td><img src="https://user-images.githubusercontent.com/95247831/205420459-6ec970a3-126c-489c-a154-95e4eed75975.mp4" width=300></td>
+    <td><img src="https://user-images.githubusercontent.com/95247831/205420467-063977b7-3678-416a-961f-88e19ddc0c30.mp4" width=300></td>
+    <td><img src="https://user-images.githubusercontent.com/95247831/205420474-1cd709b4-ca4d-483d-baf0-7120d5c17b24.mp4" width=300></td>
+  </tr>
+ </table>
 
 
 
