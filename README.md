@@ -1,20 +1,3 @@
-# ivorywalletsolution
-
-## Contents
-### 1. Report about the app
-### 2. Screenshots of screens
-### 3. Screen Recordings of the app
- 
-# 1. All the data related to this project can be found inside the following pdf
-
-[19_ENG_033_Final_Report.pdf](https://github.com/Nilupa-Illangarathna/Ivory-Wallet/files/10029657/19_ENG_033_Final_Report.pdf)
-
-
-
-
-
-
-
 
 # Ivory Wallet
 
@@ -77,6 +60,10 @@ The Ivory Wallet project addresses a pressing issue in Sri Lanka and other count
 ### 1.1 Background
 
 The Ivory Wallet project emerges as a response to the economic crisis in Sri Lanka, marked by a record-high inflation rate. The escalating cost of necessities, especially food, has necessitated a solution for managing resources effectively. This mobile app focuses on individual financial management as a key step towards alleviating the impact of inflation.
+
+# 1. All the data related to this project can be found inside the following pdf
+
+[19_ENG_033_Final_Report.pdf](https://github.com/Nilupa-Illangarathna/Ivory-Wallet/files/10029657/19_ENG_033_Final_Report.pdf)
 
 ### 1.2 Main Considerations
 
