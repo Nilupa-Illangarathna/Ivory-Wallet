@@ -13,56 +13,6 @@
 
 
 
-# 3. Screen Recordings of the app
-
-
-https://user-images.githubusercontent.com/95247831/205420459-6ec970a3-126c-489c-a154-95e4eed75975.mp4
-
-
-https://user-images.githubusercontent.com/95247831/205420467-063977b7-3678-416a-961f-88e19ddc0c30.mp4
-
-https://user-images.githubusercontent.com/95247831/205420474-1cd709b4-ca4d-483d-baf0-7120d5c17b24.mp4
-
-
-https://user-images.githubusercontent.com/95247831/205420476-c68869f7-d49d-4f36-8ef9-edb480b2e0e9.mp4
-
-https://user-images.githubusercontent.com/95247831/205420479-0afb8379-c5b9-4736-b917-2f98da83f88d.mp4
-
-
-https://user-images.githubusercontent.com/95247831/205420497-1c9ac8ee-9c04-43ce-b241-6c5e46c442d9.mp4
-
-
-https://user-images.githubusercontent.com/95247831/205420507-864d5b28-2465-4e82-86b3-3044d93d6d5c.mp4
-
-
-
-
-| Recording | Link |
-|-----------|------|
-| Recording 01 | [Link](https://user-images.githubusercontent.com/95247831/205420459-6ec970a3-126c-489c-a154-95e4eed75975.mp4) |
-| Recording 02 | [Link](https://user-images.githubusercontent.com/95247831/205420467-063977b7-3678-416a-961f-88e19ddc0c30.mp4) |
-| Recording 03 | [Link](https://user-images.githubusercontent.com/95247831/205420474-1cd709b4-ca4d-483d-baf0-7120d5c17b24.mp4) |
-| Recording 04 | [Link](https://user-images.githubusercontent.com/95247831/205420476-c68869f7-d49d-4f36-8ef9-edb480b2e0e9.mp4) |
-| Recording 05 | [Link](https://user-images.githubusercontent.com/95247831/205420479-0afb8379-c5b9-4736-b917-2f98da83f88d.mp4) |
-| Recording 06 | [Link](https://user-images.githubusercontent.com/95247831/205420497-1c9ac8ee-9c04-43ce-b241-6c5e46c442d9.mp4) |
-| Recording 07 | [Link](https://user-images.githubusercontent.com/95247831/205420507-864d5b28-2465-4e82-86b3-3044d93d6d5c.mp4) |
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -243,6 +193,35 @@ The Ivory Wallet's prediction model utilizes K-means clustering, frequency consi
 
   </tr>
  </table>
+
+
+ 
+# 3. Screen Recordings of the app
+
+
+https://user-images.githubusercontent.com/95247831/205420459-6ec970a3-126c-489c-a154-95e4eed75975.mp4
+
+
+https://user-images.githubusercontent.com/95247831/205420467-063977b7-3678-416a-961f-88e19ddc0c30.mp4
+
+https://user-images.githubusercontent.com/95247831/205420474-1cd709b4-ca4d-483d-baf0-7120d5c17b24.mp4
+
+
+https://user-images.githubusercontent.com/95247831/205420476-c68869f7-d49d-4f36-8ef9-edb480b2e0e9.mp4
+
+https://user-images.githubusercontent.com/95247831/205420479-0afb8379-c5b9-4736-b917-2f98da83f88d.mp4
+
+
+https://user-images.githubusercontent.com/95247831/205420497-1c9ac8ee-9c04-43ce-b241-6c5e46c442d9.mp4
+
+
+https://user-images.githubusercontent.com/95247831/205420507-864d5b28-2465-4e82-86b3-3044d93d6d5c.mp4
+
+
+
+
+
+
 ## 3. Methodology
 
 ### 3.1 Project Scope
