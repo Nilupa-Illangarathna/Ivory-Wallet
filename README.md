@@ -18,7 +18,6 @@ The Ivory Wallet project addresses a pressing issue in Sri Lanka and other count
 [![SQLite](https://img.shields.io/badge/database-SQLite-blue)](https://www.sqlite.org/)
 [![Firebase](https://img.shields.io/badge/backend-Firebase-yellow)](https://firebase.google.com/)
 [![GitHub](https://img.shields.io/badge/vcs-GitHub-lightgrey)](https://github.com/)
-[![Google Play Store](https://img.shields.io/badge/available%20on-Google%20Play-brightgreen)](https://play.google.com/store/apps/)
 [![Stack Overflow](https://img.shields.io/badge/Stack%20Overflow-Ask%20Questions-orange)](https://stackoverflow.com/questions/tagged/your-project-tag)
 [![Discord](https://img.shields.io/badge/Discord-Join%20Chat-blueviolet)](https://discord.gg/your-discord-server)
 
